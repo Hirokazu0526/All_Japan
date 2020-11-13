@@ -1,0 +1,144 @@
+.container {
+  height: 100vh;
+  background: #02001c;
+  background: -webkit-gradient(linear, left top, right top, color-stop(21%, #001b27), color-stop(50%, #003001), color-stop(79%, #2b0000), to(#160000));
+  background: linear-gradient(90deg, #001b27 21%, #003001 50%, #2b0000 79%, #160000 100%);
+}
+
+.abl {
+  position: absolute;
+}
+
+header {
+  position: relative;
+}
+
+.header_wrapper {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header_title {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 35px;
+  color: white;
+  font-weight: bold;
+}
+
+.header_nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  list-style: none;
+}
+
+.header_nav_list_item {
+  height: 100%;
+}
+
+.header_nav_list_item:nth-child(2) a {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.header_nav_list_item a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+  font-size: 1.2rem;
+  color: aqua;
+}
+
+.main_kv {
+  position: relative;
+  width: 100vw;
+  height: 714px;
+}
+
+.main_kv_01 {
+  top: 200px;
+  left: -150px;
+  width: 40%;
+  z-index: 5;
+}
+
+.main_kv_02 {
+  top: 230px;
+  left: 120px;
+  width: 38%;
+  z-index: 5;
+}
+
+.main_kv_03 {
+  top: 40px;
+  left: -150px;
+  width: 40%;
+  z-index: 4;
+}
+
+.main_kv_04 {
+  top: 0px;
+  right: 10px;
+  width: 70%;
+  z-index: 5;
+}
+
+.main_kv_05 {
+  top: -100px;
+  right: 20px;
+  width: 75%;
+  z-index: 5;
+}
+
+.main_kv_06 {
+  top: -130px;
+  right: -180px;
+  width: 60%;
+  z-index: 3;
+}
+
+.main_kv_07 {
+  top: 20px;
+  left: 480px;
+  width: 35%;
+  z-index: 5;
+}
+
+.main_kv_08 {
+  top: -37px;
+  left: 160px;
+  width: 45%;
+  z-index: 5;
+}
+
+.main_kv_09 {
+  top: 20px;
+  left: 250px;
+  width: 60%;
+  z-index: 20;
+}
+/*# sourceMappingURL=style.css.map */
