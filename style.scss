@@ -1,0 +1,127 @@
+.container{
+    height: 100vh;
+    background: rgb(2,0,28);
+    // background: linear-gradient(90deg, rgba(2,0,28,1) 0%, rgba(0,27,39,1) 10%, rgba(0,27,39,1) 21%, rgba(0,38,5,1) 35%, rgba(0,48,1,1) 50%, rgba(0,38,5,1) 65%, rgba(43,0,0,1) 79%, rgba(43,0,0,1) 90%, rgba(22,0,0,1) 100%);
+    background: linear-gradient(90deg,rgba(0,27,39,1) 21%, rgba(0,48,1,1) 50%, rgba(43,0,0,1) 79%, rgba(22,0,0,1) 100%);
+}
+.abl{
+    position: absolute;
+}
+header{
+    position: relative;
+}
+
+// headerここから
+.header{
+    &_wrapper{
+        width: 1200px;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+
+    }
+    &_title{//タイトル
+        position: absolute;
+        top: 10px;
+        left: 0;
+        display: inline-block;
+        font-size: 2rem;
+        line-height: 35px;
+        color: white;
+        font-weight: bold;
+    }
+    &_nav_list{//ヘッダーナビゲーション
+        display: flex;
+        width: 500px;
+        height: 20px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        list-style: none;
+        
+
+        &_item{
+            height: 100%;
+            
+            &:nth-child(2) a{
+                color: red;
+                font-size: 1.2rem;
+            }
+
+            & a{
+                text-decoration: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+                line-height: 20px;
+                font-size: 1.2rem;
+                color: aqua;
+            }
+        }
+    }
+}
+.main{
+    &_kv{
+        position: relative;
+        width: 100vw;
+        height: 714px;
+
+         &_01{
+            top: 200px; 
+            left: -150px;
+            width: 40%;
+            z-index: 5;
+         }
+         &_02{
+            top: 230px;
+            left: 120px;
+            width: 38%;
+            z-index: 5;
+         }
+         &_03{
+            top: 40px; 
+            left: -150px;
+            width: 40%;
+            z-index: 4;
+         }
+         &_04{
+            top: 0px;
+            right: 10px;
+            width: 70%;
+            z-index: 5;
+         }
+         &_05{
+            top: -100px;
+            right: 20px;
+            width: 75%;
+            z-index: 5;
+         }
+         &_06{
+            top: -130px;
+            right: -180px;
+            width: 60%;
+            z-index: 3;
+        }
+         &_07{
+            top: 20px;
+            left: 480px;
+            width: 35%;
+            z-index: 5;
+        }
+         &_08{
+            top: -37px;
+            left: 160px;
+            width: 45%;
+            z-index: 5;
+         }
+         &_09{
+            top: 20px;
+            left: 250px;
+            width: 60%;
+            z-index: 20;
+         }
+     }
+
+}
