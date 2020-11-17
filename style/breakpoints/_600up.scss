@@ -1,0 +1,310 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.font-gd{
+  font-size: 1.8rem !important;
+  color: rgb(243, 240, 92) !important;
+}
+
+.mobile-menu {
+    &__btn {
+        display: none;
+    }
+}
+
+.header{
+    &-inner{
+        height: 180px;
+        
+    }
+    &-top{
+        display: inline-block;
+        position: absolute;
+        height: 120px;
+        background: none;
+        z-index: 20;
+        background: rgba(0, 8, 90, 0.5);
+    }
+    &-logo{
+        &-ttl{
+            font-size: 0.7rem;
+            top: 30px;
+            left: 20px;
+        }
+    }
+    &-chara{
+        display: block;
+        
+
+        img{
+            width: 60px;
+            top: 20px;
+            right: 255px;
+        }
+    }
+
+    &-nav{
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        z-index: 20;
+        background-color: rgba(0, 8, 90, 0.5);
+
+        &.nav_fixed{//スクロール時の固定
+          position: fixed;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          border-top: none;
+          border-bottom: none;
+          width: 100%;
+        }
+
+        &-list{
+
+            a{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+
+.sns{
+    &-icon{
+        // position: fixed;
+        top: 10px;
+        right: 20px;
+        display: inline-block;
+        width: 220px;
+        z-index: 20;
+    }
+}
+
+main{
+    padding-top: 0;
+}
+.main{
+
+    &-slider{
+        
+        &-pc{
+            display: block;
+        }
+        &-sp{
+            display: none;
+        }
+    }
+}
+
+.bc{
+  opacity: 0;
+  transition: all 1s;
+    &-text{
+        top: 50%;
+        font-size: 3rem;
+    }
+
+    &.bg-active{
+      opacity: 1;
+    }
+}
+
+.kv{
+    width: 100%;
+    margin-top: 10px;
+}
+  
+.sp{
+  display: none;
+}
+.pc{
+  display: block;
+}
+.slide{
+  &-item{
+    // display: inline-block;
+    margin: 0 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+    &-top{
+      display: flex;
+      align-items: center;
+      // justify-content: start;
+
+        p{
+          text-indent: 0;
+        }
+    }
+
+    &-title{
+      font-size: 1.5rem;
+    }
+
+    &-img{
+      width: 630px;
+    }
+
+    &-info{
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+
+.section{
+    &-inner{
+      padding-top: 90px;
+    }
+  
+    &-info{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      &-left{
+          width: 48%;
+      }
+      &-right{
+          width: 48%;
+      }
+
+      &.schedule{
+        flex-direction: column;
+
+        & .section-info-left{
+          width: 100%;
+        }        
+        & .section-info-right{
+          width: 100%;
+        }        
+
+      }
+
+    }
+  
+    &-title{
+      font-size: 2.5rem;
+    }
+  
+    &-subttl{
+        font-size: 1.1rem;
+        &.stadium{
+            font-size: 1.8rem;
+        }
+  
+    }
+  
+  
+    &-adress{
+      color: $cWhite;
+      line-height: 30px;
+      h3{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+    }
+}
+
+  .section-subttl.sdiv{
+      font-size: 1.8rem;
+  }
+  .section-subttl.mdiv{
+    font-size: 1.8rem;
+  }
+  .section-subttl.wdiv{
+    font-size: 1.8rem;
+  }
+
+
+
+  #Sponsor{
+    background: #fff;
+    margin-top: 120px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .sponsor{
+    &-logo{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      a{
+        display: block;
+        width: 150px;
+        margin: 0 20px;
+        
+  
+        // &:nth-child(1){
+        //   align-self: center;
+        // }
+        // &:nth-child(2){
+        //   width: 150px;
+        // }
+        // &:nth-child(3){
+        //   align-self: center;
+        // }
+        &:nth-child(4){
+          width: 100px;
+        }
+        &:nth-child(5){
+          width: 100px;
+        }
+        // &:nth-child(6){
+        //   align-self: center;
+        // }
+        &:nth-child(7){
+          width: 120px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+    &-item{
+      width: 100%;
+      margin-top: 30px;
+  
+    }
+  }
+
+  .live{
+    &-info{
+    }
+    &-text{
+      &-item{
+        & .information{
+          // width: 290px;
+          font-size: 25px;
+        }
+      }
+    }
+
+    &-img{
+      &-pc{
+        display: block;
+        // margin: 0 auto;
+      }
+      &-sp{
+        display: none;
+        margin: 0 auto;
+      }
+    }
+
+  }
