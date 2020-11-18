@@ -40,6 +40,7 @@ header{
         justify-content: flex-end;
         align-items: center;
         position: relative;
+        z-index: 50;
     }
     
     &_title{//タイトル
@@ -61,6 +62,7 @@ header{
         flex-wrap: nowrap;
         list-style: none;
         
+        
 
         &_item{
             height: 100%;
@@ -80,6 +82,7 @@ header{
                 font-size: 1.2rem;
                 color: aqua;
                 font-family: $Au;
+                cursor: pointer;
             }
         }
     }
