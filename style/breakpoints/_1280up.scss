@@ -3,173 +3,266 @@
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+
+.abl{
+  position: absolute;
+}
+header{
+  position: relative;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+// headerここから
 .header{
-  
-    &-logo{
-        &-ttl{
-            font-size: 1.2rem;
-            top: 13px;
-            left: 50px;
-        }
-    }
-
-    &-chara{
-        img{
-            right: 350px;
-        }
-    }
-  
-    &-nav{
-      &-list{
-        a{
-          font-size: 2rem;
-            &:hover{
-          // color: blue;
-            font-size: 2.2rem;
-            transition: all 0.3s;
-        }
-          
-
-          }
-        }
-      
-    }
-  }
-  
-  .bc{
-    &-text{
-      top: 50%;
-      font-size: 4rem;
-  
-    }
-  }
-  
-  .sponsor{
-    &-logo{
-     
-      a{
-        display: block;
-        width: 300px;
-        margin: 0 30px;
-      }
-    }
-    &-item{
-      width: 100%;
-      margin-top: 30px;
-  
-    }
-  }
-
-  .sns-icon{
-      right: 110px;
-      a{
-        &:hover{
-            opacity: 1;
-            }
-      }
-  }
-
-  .slide{
-      &-item{
-          margin: 0 50px;
-          padding: 20px;
-
-          &-title{
-              font-size: 2.5rem;
-          }
-
-          &-img{
-              width: 800px;
-          }
-
-          &-text{
-              font-size: 2rem;
-              margin-top: 20px;
-          }
-      }
-  }
-
-  .cm{
-      font-size: 2rem;
-  }
-  .nd{
-      font-size: 1.8rem;
-  }
-  .rd{
-      font-size: 1.7rem;
-  }
-  
-  .section{
-    &-title{
-      font-size: 3rem;
-    }
-  
-    &-subttl{
-        font-size: 1.4rem;
-        &.stadium{
-          font-size: 2rem;
-      }
-    }
-  
-    &-text{
-      p{
-      font-size: 1.6rem;
-      }
-    }
-  
-    &-adress{
-      color: $cWhite;
-      line-height: 30px;
-      h4{
-        font-size: 1.6rem;
-        margin-bottom: 5px;
-        line-height: 40px;
-      }
-      p{
-        font-size: 1.5rem;
-        line-height: 35px;
-      }
-    }
-  }
-
-  .live{
-    &-info{
+  &_area{
+      width: 1200px;
+      height: 50px;
+      margin: 0 auto;
       display: flex;
-      justify-content: space-between;
-    }
-    &-subttl{
-      font-size: 2.3rem !important;
-    }
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      z-index: 50;
 
-
-    &-text{
-      &-item{
-        & .information{
-          width: 500px;
-          font-size: 1.3rem;
-        }
+      & nav{
+        position: fixed;
       }
-
-      &-item{
-        &-m{
-          font-size: 2rem!important;
-        }
-        &-w{
-          font-size: 2rem!important;
-        }
-        &-s{
-          font-size: 2rem!important;
-        }
-      }
-    }
-
-    &-img{
-      &-pc{
-        display: block;
-      }
-      &-sp{
-        display: none;
-        margin: 0 auto;
-      }
-    }
   }
+  
+  &_title{//タイトル
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: inline-block;
+      font-size: 2rem;
+      line-height: 35px;
+      color: white;
+      font-weight: bold;
+      font-family: $Au;
+  }
+  &_nav_list{//ヘッダーナビゲーション
+      display: flex;
+      width: 500px;
+      height: 20px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      list-style: none;
+      
+      
+      
+
+      &_item{
+          height: 100%;
+          
+          &:nth-child(2) a{
+              color: red;
+              font-size: 1.2rem;
+              font-family: $Au;
+          }
+
+          & a{
+              text-decoration: none;
+              display: block;
+              width: 100%;
+              height: 100%;
+              line-height: 20px;
+              font-size: 1.2rem;
+              color: aqua;
+              font-family: $Au;
+              cursor: pointer;
+          }
+      }
+  }
+}
+.main{
+  &-area{
+    height: 650px;
+  }
+
+  &_kv{
+      position: relative;
+      width: 100vw;
+      height: 7180px;
+      display: block;
+
+       &_01{
+          top: 200px; 
+          left: -50px;
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 2s;
+          animation-timing-function: ease-in-out;
+       }
+       &_02{
+          top: 180px;
+          left: 250px;
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 2.5s;
+          animation-timing-function: ease-in-out;
+       }
+       &_03{
+          top: 20px; 
+          left: -10px;
+          width: 40%;
+          opacity: 0;
+          z-index: 4;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 3s;
+          animation-timing-function: ease-in-out;
+       }
+       &_04{
+          top: 180px;
+          right: 20px;
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 3.5s;
+          animation-timing-function: ease-in-out;
+       }
+       &_05{
+          top: 180px;
+          right: 20px;
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 4s;
+          animation-timing-function: ease-in-out;
+       }
+       &_06{
+          top: -50px;
+          right: 40px;
+          width: 30%;
+          opacity: 0;
+          z-index: 3;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 4.5s;
+          animation-timing-function: ease-in-out;
+      }
+       &_07{
+          top: -20px;
+          left: 590px;
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 5s;
+          animation-timing-function: ease-in-out;
+      }
+       &_08{
+          top: -40px;
+          left: 280px;
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 5.5s;
+          animation-timing-function: ease-in-out;
+       }
+       &_09{
+          top: 90px;
+          left: 350px;
+          width: 50%;
+          opacity: 0;
+          z-index: 20;
+          animation-name: fadeIn;
+          animation-duration: 1.2s;
+          animation-fill-mode: forwards;
+          animation-delay: 6s;
+          animation-timing-function: ease-in-out;
+       }
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.sttl{
+  display: flex;
+  justify-content: space-around;
+  
+  &_text{
+      font-size: 2rem;
+      color: white;
+      font-family: $Au;
+      display: inline-block;
+      text-align: center;
+      z-index: 30;
+      opacity: 0;
+      position: absolute;
+      animation-name: fadeIn;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-delay: 6.5s;
+      animation-timing-function: ease-in-out;
+
+      &.catch_cp{
+        width: 100%;
+        font-size: 5rem;
+        color: rgb(134, 110, 2);
+        outline: seashell 1px solid;
+        top: 500px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &.s2019{
+          top: 650px;
+          left: 200px;
+          transform: translateY(-50%);
+      }
+      &.w2019{
+          top: 650px;
+          left: 630px;
+          transform: translateY(-50%);
+      }
+      &.s2020{
+          top: 650px;
+          right: 100px;
+          transform: translateY(-50%);
+      }
+  }
+}
+
+.kv img{
+  width: 600px;
+}
+
+.section{
+  &-title{
+    font-size: 2rem;
+  }
+}
