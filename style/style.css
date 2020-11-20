@@ -1173,8 +1173,9 @@ Stylesheet: 1280px以上のモニタで適用
   .section-inner {
     height: 100%;
     padding: 0;
+    margin-top: 50px;
   }
-  .section-info {
+  .section-info.about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
