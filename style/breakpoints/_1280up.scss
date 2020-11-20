@@ -295,3 +295,43 @@ header{
     font-size: 1.5rem;
   }
 }
+.group {
+  border: 2px solid #aaa;
+  border-collapse: separate;
+  overflow: hidden;
+  border-spacing: 0;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #aaa;
+
+    th, td {
+      padding: .2em 1em;
+      vertical-align: middle;
+      border-right: 2px solid #aaa;
+      border-bottom: 2px solid #aaa;
+      width: 200px;
+
+      &:last-child {
+        border-right: none;
+      }
+      }
+  }
+
+
+  .group tr {
+    &:last-child {
+      th, td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .group th {
+    background: red;
+    color: white;
+  }
+
+  .group td {
+    background: #fff;
+    font-weight: bold;
+  }
