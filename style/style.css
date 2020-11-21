@@ -1228,6 +1228,16 @@ Stylesheet: 1280px以上のモニタで適用
     background: #fff;
     font-weight: bold;
   }
+  summary {
+    background: red;
+    cursor: pointer;
+    padding: 12px;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
