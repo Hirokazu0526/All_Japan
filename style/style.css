@@ -845,6 +845,98 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+details {
+  width: 290px;
+  margin-bottom: 5px;
+  overflow-x: auto;
+}
+
+details[open] .group {
+  -webkit-animation: fadeIn_g 0.5s ease;
+          animation: fadeIn_g 0.5s ease;
+}
+
+@-webkit-keyframes fadeIn_g {
+  0% {
+    opacity: 0;
+    /* 透明 */
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    /* 上から表示 */
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeIn_g {
+  0% {
+    opacity: 0;
+    /* 透明 */
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    /* 上から表示 */
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.group {
+  border: 2px solid #aaa;
+  border-collapse: separate;
+  overflow: hidden;
+  border-spacing: 0;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #aaa;
+  width: 570px;
+  table-layout: fixed;
+}
+
+.group th, .group td {
+  padding: 5px 5px;
+  vertical-align: middle;
+  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  height: 40px;
+}
+
+.group th:last-child, .group td:last-child {
+  border-right: none;
+  width: 60px;
+}
+
+.group tr:last-child th, .group tr:last-child td {
+  border-bottom: none;
+}
+
+.group td {
+  background: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+summary {
+  background: red;
+  cursor: pointer;
+  padding: 12px;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 #Sponsor {
   background: #fff;
   margin-top: 80px;
@@ -863,6 +955,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .sponsor-logo a {
@@ -893,7 +986,7 @@ footer {
   height: 60px;
 }
 
-footer .inner {
+footer .wrapper {
   text-align: center;
 }
 
@@ -1040,7 +1133,7 @@ Stylesheet: 1280px以上のモニタで適用
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 500px;
+    width: 650px;
     height: 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1054,7 +1147,7 @@ Stylesheet: 1280px以上のモニタで適用
   }
   .header_nav_list_item:nth-child(2) a {
     color: red;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-family: "Audiowide";
   }
   .header_nav_list_item a {
@@ -1063,7 +1156,7 @@ Stylesheet: 1280px以上のモニタで適用
     width: 100%;
     height: 100%;
     line-height: 20px;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: aqua;
     font-family: "Audiowide";
     cursor: pointer;
