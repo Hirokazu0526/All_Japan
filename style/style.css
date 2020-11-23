@@ -845,6 +845,65 @@ a {
   text-decoration: none;
 }
 
+#Sponsor {
+  background: #fff;
+  margin-top: 80px;
+  padding-top: 20px;
+}
+
+.sponsor > h2 {
+  color: red;
+}
+
+.sponsor-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sponsor-logo a {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.sponsor-logo a:nth-child(4) {
+  width: 180px;
+}
+
+.sponsor-logo a:nth-child(5) {
+  width: 180px;
+}
+
+.sponsor-logo a:nth-child(7) {
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+.sponsor-item {
+  width: 100%;
+  margin-top: 60px;
+}
+
+footer {
+  height: 60px;
+}
+
+footer .inner {
+  text-align: center;
+}
+
+footer small {
+  color: white;
+  font-size: 0.7rem;
+  font-family: 'PT Serif';
+  line-height: 60px;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -859,6 +918,48 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+  #Sponsor {
+    background: #fff;
+    margin-top: 120px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .sponsor-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sponsor-logo a {
+    display: block;
+    width: 150px;
+    margin: 0 20px;
+  }
+  .sponsor-logo a:nth-child(4) {
+    width: 100px;
+  }
+  .sponsor-logo a:nth-child(5) {
+    width: 100px;
+  }
+  .sponsor-logo a:nth-child(7) {
+    width: 120px;
+    margin-bottom: 0px;
+  }
+  .sponsor-item {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -867,6 +968,25 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .sponsor-logo a {
+    display: block;
+    width: 280px;
+    margin: 0 30px;
+  }
+  .sponsor-logo a:nth-child(4) {
+    width: 140px;
+  }
+  .sponsor-logo a:nth-child(5) {
+    width: 140px;
+  }
+  .sponsor-logo a:nth-child(7) {
+    width: 200px;
+    margin-bottom: 0px;
+  }
+  .sponsor-item {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1299,6 +1419,15 @@ Stylesheet: 1280px以上のモニタで適用
     color: white;
     margin-bottom: 5px;
     text-align: center;
+  }
+  .sponsor-logo a {
+    display: block;
+    width: 300px;
+    margin: 0 30px;
+  }
+  .sponsor-item {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 
