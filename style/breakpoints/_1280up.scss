@@ -305,23 +305,7 @@ header{
 details{
   width: 590px;
   margin-bottom: 5px;
-  // transition: all 1s;
 }
-
-// details .group {
-//   animation: fadeOut_g 0.5s ease;
-// }
-
-// @keyframes fadeOut_g {
-//   0% {
-//     opacity: 1; /* 透明 */
-    
-//   }
-//   100% {
-//     opacity: 0;
-//     transform: translateY(10px);
-//   }
-// }
 
 details[open] .group {
   animation: fadeIn_g 0.5s ease;
@@ -348,7 +332,7 @@ details[open] .group {
   border: 2px solid #aaa;
   width: 590px;
   table-layout: fixed;
-
+  
 
     th, td {
       padding: 5px 5px;
@@ -396,4 +380,20 @@ details[open] .group {
     color: white;
     margin-bottom: 5px;
     text-align: center;
+  }
+
+  .sponsor{
+    &-logo{
+     
+      a{
+        display: block;
+        width: 300px;
+        margin: 0 30px;
+      }
+    }
+    &-item{
+      width: 100%;
+      margin-top: 30px;
+  
+    }
   }
