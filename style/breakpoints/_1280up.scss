@@ -200,7 +200,7 @@ header{
        }
 
        & > img{
-         opacity: 0;
+         opacity: 0;//imgの表示
        }    
   }
 }
@@ -226,7 +226,7 @@ header{
       display: inline-block;
       text-align: center;
       z-index: 30;
-      opacity: 0;
+      opacity: 0;//whoistheChampionのテキスト
       position: absolute;
       animation-name: fadeIn;
       animation-duration: 1.5s;
@@ -305,6 +305,36 @@ header{
 details{
   width: 590px;
   margin-bottom: 5px;
+  // transition: all 1s;
+}
+
+// details .group {
+//   animation: fadeOut_g 0.5s ease;
+// }
+
+// @keyframes fadeOut_g {
+//   0% {
+//     opacity: 1; /* 透明 */
+    
+//   }
+//   100% {
+//     opacity: 0;
+//     transform: translateY(10px);
+//   }
+// }
+
+details[open] .group {
+  animation: fadeIn_g 0.5s ease;
+}
+@keyframes fadeIn_g {
+  0% {
+    opacity: 0; /* 透明 */
+    transform: translateY(-10px); /* 上から表示 */
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 
@@ -317,16 +347,20 @@ details{
   text-align: center;
   border: 2px solid #aaa;
   width: 590px;
+  table-layout: fixed;
+
 
     th, td {
       padding: 5px 5px;
       vertical-align: middle;
       border-right: 2px solid #aaa;
       border-bottom: 2px solid #aaa;
-      width: 80px;
+      height: 75px;
+      
 
       &:last-child {
         border-right: none;
+        width: 60px;
       }
       }
   }
@@ -340,17 +374,18 @@ details{
     }
   }
 
-  .group th {
-    background: red;
-    color: white;
-    font-size: 16px;
-  }
+  // .group th {
+  //   background: red;
+  //   color: white;
+  //   font-size: 16px;
+  // }
 
   .group td {
     background: #fff;
     font-weight: bold;
     font-size: 16px;
   }
+  
 
   summary {
     background: red;
