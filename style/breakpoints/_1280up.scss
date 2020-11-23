@@ -47,7 +47,7 @@ header{
   }
   &_nav_list{//ヘッダーナビゲーション
       display: flex;
-      width: 500px;
+      width: 650px;
       height: 20px;
       justify-content: space-between;
       flex-wrap: nowrap;
@@ -61,7 +61,7 @@ header{
           
           &:nth-child(2) a{
               color: red;
-              font-size: 1.2rem;
+              font-size: 1.7rem;
               font-family: $Au;
           }
 
@@ -71,7 +71,7 @@ header{
               width: 100%;
               height: 100%;
               line-height: 20px;
-              font-size: 1.2rem;
+              font-size: 1.7rem;
               color: aqua;
               font-family: $Au;
               cursor: pointer;
