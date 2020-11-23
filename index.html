@@ -84,186 +84,53 @@
                         <div class="section-info">
                             <h3 class="section-subttl font-gd">2020.12.26(Sun)</h3><br>
                             <div class="section-group font-fmSg">
-                                <details>
-                                    <summary>GROUP A</summary>
-                                    <table class="group">
-                                        <tr>
+                                <template v-for=" g in groups ">
+                                    <details>
+                                      <summary>Group {{ g.groupName }}</summary>
+                                        <table class="group">
+                                            <tr>
                                             <td>&nbsp;</td>
-                                            <td>{{ groupA.team1 }}</td>
-                                            <td>{{ groupA.team2 }}</td>
-                                            <td>{{ groupA.team3 }}</td>
-                                            <td>{{ groupA.team4 }}</td>
-                                            <td>順位</td>
-                                        </tr> 
-                                        <tr>
-                                            <td>{{ groupA.team1 }}</td>
+                                            <td>{{ g.name1 }}</td>
+                                            <td>{{ g.name2 }}</td>
+                                            <td>{{ g.name3 }}</td>
+                                            <td>{{ g.name4 }}</td>
+                                            <td>{{ g.rsl }}</td>        
+                                            </tr>
+                                            <tr>
+                                            <td>{{ g.name1 }}</td>
                                             <td>&nbsp;</td>
-                                            <td>21-19<br>19-21<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[0] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team2 }}</td>
-                                            <td>21-19<br>21-19</td>
+                                            <td>{{ g.scr1 }}</td>
+                                            <td>{{ g.scr2 }}</td>
+                                            <td>{{ g.scr3 }}</td>
+                                            <td>{{ g.rsl2 }}</td>        
+                                            </tr>
+                                            <tr>
+                                            <td>{{ g.name2 }}</td>
+                                            <td>{{ g.scr1.split(' ').map(score => score.split('-').reverse().join('-')).join(' ') }}</td>
                                             <td>&nbsp;</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[1] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team3 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
+                                            <td>{{ g.scr4 }}</td>
+                                            <td>{{ g.scr5 }}</td>
+                                            <td>{{ g.rsl3 }}</td>        
+                                            </tr>
+                                            <tr>
+                                            <td>{{ g.name3 }}</td>
+                                            <td>{{ g.scr2.split(' ').map(score => score.split('-').reverse().join('-')).join(' ') }}</td>
+                                            <td>{{ g.scr4.split(' ').map(score => score.split('-').reverse().join('-')).join(' ') }}</td>
                                             <td>&nbsp;</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[2] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team4 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
+                                            <td>{{ g.scr6 }}</td>
+                                            <td>{{ g.rsl4 }}</td>        
+                                            </tr>
+                                            <tr>
+                                            <td>{{ g.name4 }}</td>
+                                            <td>{{ g.scr3.split(' ').map(score => score.split('-').reverse().join('-')).join(' ') }}</td>
+                                            <td>{{ g.scr5.split(' ').map(score => score.split('-').reverse().join('-')).join(' ') }}</td>
+                                            <td>{{ g.scr6.split(' ').map(score => score.split('-').reverse().join('-')).join(' ') }}</td>
                                             <td>&nbsp;</td>
-                                            <td>{{ groupA.result[3] }}</td>
-                                        </tr>
-                                    </table>
-                                </details>
-                                <details>
-                                    <summary>GROUP B</summary>
-                                    <table class="group">
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td>{{ groupA.team1 }}</td>
-                                            <td>{{ groupA.team2 }}</td>
-                                            <td>{{ groupA.team3 }}</td>
-                                            <td>{{ groupA.team4 }}</td>
-                                            <td>順位</td>
-                                        </tr> 
-                                        <tr>
-                                            <td>{{ groupA.team1 }}</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>19-21<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[0] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team2 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[1] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team3 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[2] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team4 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>{{ groupA.result[3] }}</td>
-                                        </tr>
-                                    </table>
-                                </details>
-                                <details>
-                                    <summary>GROUP C</summary>
-                                    <table class="group">
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td>{{ groupA.team1 }}</td>
-                                            <td>{{ groupA.team2 }}</td>
-                                            <td>{{ groupA.team3 }}</td>
-                                            <td>{{ groupA.team4 }}</td>
-                                            <td>順位</td>
-                                        </tr> 
-                                        <tr>
-                                            <td>{{ groupA.team1 }}</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>19-21<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[0] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team2 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[1] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team3 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[2] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team4 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>{{ groupA.result[3] }}</td>
-                                        </tr>
-                                    </table>
-                                </details>
-                                <details>
-                                    <summary>GROUP C</summary>
-                                    <table class="group">
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td>{{ groupA.team1 }}</td>
-                                            <td>{{ groupA.team2 }}</td>
-                                            <td>{{ groupA.team3 }}</td>
-                                            <td>{{ groupA.team4 }}</td>
-                                            <td>順位</td>
-                                        </tr> 
-                                        <tr>
-                                            <td>{{ groupA.team1 }}</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>19-21<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[0] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team2 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[1] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team3 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>{{ groupA.result[2] }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>{{ groupA.team4 }}</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>21-19<br>21-19</td>
-                                            <td>&nbsp;</td>
-                                            <td>{{ groupA.result[3] }}</td>
-                                        </tr>
-                                    </table>
-                                </details>
+                                            <td>{{ g.rsl5 }}</td>        
+                                            </tr>    
+                                        </table>
+                                    </details>
+                                </template>
                             </div>
                         </div>
                         <div class="section-info-right">
