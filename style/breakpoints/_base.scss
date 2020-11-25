@@ -106,19 +106,19 @@ header{
 //キービジュアル
 .main{
   &-area{
-    height: 650px;
+    height: 560px;
   }
 
   &_kv{
       position: relative;
-      width: 100vw;
-      height: 660px;
+      // width: 100vw;
+      height: 560px;
       display: block;
 
        &_01{
-          top: 440px;
+          top: 348px;
           right: 0px;
-          width: 75%;
+          width: 66%;
           opacity: 0;
           z-index: 5;
           animation-name: fadeIn;
@@ -128,9 +128,9 @@ header{
           animation-timing-function: ease-in-out;
        }
        &_02{
-          top: 480px;
+          top: 380px;
           left: -10px;
-          width: 60%;
+          width: 56%;
           opacity: 0;
           z-index: 5;
           animation-name: fadeIn;
@@ -140,9 +140,9 @@ header{
           animation-timing-function: ease-in-out;
        }
        &_03{
-          top: 385px;
-          left: -10px;
-          width: 93%;
+          top: 314px;
+          left: 12px;
+          width: 85%;
           opacity: 0;
           z-index: 21;
           animation-name: fadeIn;
@@ -153,7 +153,7 @@ header{
        }
        &_04{
           top: 12px;
-          left: -224px;
+          left: -164px;
           width: 83%;
           opacity: 0;
           z-index: 4;
@@ -188,7 +188,7 @@ header{
           animation-timing-function: ease-in-out;
       }
        &_07{
-          top: 180px;
+          top: 128px;
           right: 0px;
           width: 70%;
           opacity: 0;
@@ -200,8 +200,8 @@ header{
           animation-timing-function: ease-in-out;
       }
        &_08{
-          top: 180px;
-          left: -120px;
+          top: 137px;
+          left: -90px;
           width: 90%;
           opacity: 0;
           z-index: 5;
@@ -212,7 +212,7 @@ header{
           animation-timing-function: ease-in-out;
        }
        &_09{
-          top: 150px;
+          top: 120px;
           left: 13px;
           width: 90%;
           opacity: 0;
