@@ -845,13 +845,284 @@ a {
   text-decoration: none;
 }
 
+.abl {
+  position: absolute;
+}
+
+header {
+  position: relative;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  padding: 0;
+}
+
+.header_area {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 50;
+}
+
+.header_area nav {
+  position: fixed;
+}
+
+.header_title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: "Audiowide";
+}
+
+.header_nav_list {
+  display: none;
+  width: 650px;
+  height: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  list-style: none;
+}
+
+.header_nav_list_item {
+  height: 100%;
+}
+
+.header_nav_list_item:nth-child(2) a {
+  color: red;
+  font-size: 1.7rem;
+  font-family: "Audiowide";
+}
+
+.header_nav_list_item a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+  font-size: 1.7rem;
+  color: aqua;
+  font-family: "Audiowide";
+  cursor: pointer;
+}
+
+.main-area {
+  height: 650px;
+}
+
+.main_kv {
+  position: relative;
+  width: 100vw;
+  height: 660px;
+  display: block;
+}
+
+.main_kv_01 {
+  top: 440px;
+  right: 0px;
+  width: 75%;
+  opacity: 0;
+  z-index: 5;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv_02 {
+  top: 480px;
+  left: -10px;
+  width: 60%;
+  opacity: 0;
+  z-index: 5;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv_03 {
+  top: 385px;
+  left: -10px;
+  width: 93%;
+  opacity: 0;
+  z-index: 21;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv_04 {
+  top: 12px;
+  left: -224px;
+  width: 83%;
+  opacity: 0;
+  z-index: 4;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv_05 {
+  top: -19px;
+  right: 9px;
+  width: 65%;
+  opacity: 0;
+  z-index: 6;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv_06 {
+  top: -17px;
+  left: 59px;
+  width: 75%;
+  opacity: 0;
+  z-index: 3;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv_07 {
+  top: 180px;
+  right: 0px;
+  width: 70%;
+  opacity: 0;
+  z-index: 5;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv_08 {
+  top: 180px;
+  left: -120px;
+  width: 90%;
+  opacity: 0;
+  z-index: 5;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv_09 {
+  top: 150px;
+  left: 13px;
+  width: 90%;
+  opacity: 0;
+  z-index: 20;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.main_kv > img {
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 details {
-  width: 290px;
+  width: 100%;
   margin-bottom: 5px;
   overflow-x: auto;
 }

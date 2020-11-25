@@ -25,13 +25,224 @@ ul,li{
 a{
   text-decoration: none;
 }
+
+.abl{
+  position: absolute;
+}
+header{
+  position: relative;
+}
+
+
 .wrapper{
   width: 90%;
   margin: 0 auto;
+  padding: 0;
 }
 
+// headerここから
+.header{
+  &_area{
+      width: 100%;
+      height: 50px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      z-index: 50;
+
+      & nav{
+        position: fixed;
+      }
+  }
+  
+  &_title{//タイトル
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 20px;
+      color: white;
+      font-weight: bold;
+      font-family: $Au;
+  }
+  &_nav_list{//ヘッダーナビゲーション
+      display: none;
+      width: 650px;
+      height: 20px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      list-style: none;
+      
+      
+      
+
+      &_item{
+          height: 100%;
+          
+          &:nth-child(2) a{
+              color: red;
+              font-size: 1.7rem;
+              font-family: $Au;
+          }
+
+          & a{
+              text-decoration: none;
+              display: block;
+              width: 100%;
+              height: 100%;
+              line-height: 20px;
+              font-size: 1.7rem;
+              color: aqua;
+              font-family: $Au;
+              cursor: pointer;
+          }
+      }
+  }
+}
+
+//キービジュアル
+.main{
+  &-area{
+    height: 650px;
+  }
+
+  &_kv{
+      position: relative;
+      width: 100vw;
+      height: 660px;
+      display: block;
+
+       &_01{
+          top: 440px;
+          right: 0px;
+          width: 75%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 3.5s;
+          animation-timing-function: ease-in-out;
+       }
+       &_02{
+          top: 480px;
+          left: -10px;
+          width: 60%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 4s;
+          animation-timing-function: ease-in-out;
+       }
+       &_03{
+          top: 385px;
+          left: -10px;
+          width: 93%;
+          opacity: 0;
+          z-index: 21;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 4.5s;
+          animation-timing-function: ease-in-out;
+       }
+       &_04{
+          top: 12px;
+          left: -224px;
+          width: 83%;
+          opacity: 0;
+          z-index: 4;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 2s;
+          animation-timing-function: ease-in-out;
+       }
+       &_05{
+          top: -19px;
+          right: 9px;
+          width: 65%;
+          opacity: 0;
+          z-index: 6;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 2.5s;
+          animation-timing-function: ease-in-out;
+       }
+       &_06{
+          top: -17px;
+          left: 59px;
+          width: 75%;
+          opacity: 0;
+          z-index: 3;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 3s;
+          animation-timing-function: ease-in-out;
+      }
+       &_07{
+          top: 180px;
+          right: 0px;
+          width: 70%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 5s;
+          animation-timing-function: ease-in-out;
+      }
+       &_08{
+          top: 180px;
+          left: -120px;
+          width: 90%;
+          opacity: 0;
+          z-index: 5;
+          animation-name: fadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: forwards;
+          animation-delay: 5.5s;
+          animation-timing-function: ease-in-out;
+       }
+       &_09{
+          top: 150px;
+          left: 13px;
+          width: 90%;
+          opacity: 0;
+          z-index: 20;
+          animation-name: fadeIn;
+          animation-duration: 1.2s;
+          animation-fill-mode: forwards;
+          animation-delay: 6s;
+          animation-timing-function: ease-in-out;
+       }
+
+       & > img{
+         opacity: 0;//imgの表示
+       }    
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
 details{
-  width: 290px;
+  width: 100%;
   margin-bottom: 5px;
   overflow-x: auto;
 }
