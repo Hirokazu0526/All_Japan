@@ -25,6 +25,9 @@ $cMenuOpen: $cBlack;
         cursor: pointer;
         z-index: 20;
 
+        & > span{
+            color: orange;
+        }
         
     
         & > span:before {

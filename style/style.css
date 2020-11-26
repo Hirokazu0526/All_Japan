@@ -570,6 +570,10 @@ img {
   z-index: 20;
 }
 
+.mobile-menu__btn > span {
+  color: orange;
+}
+
 .mobile-menu__btn > span:before {
   content: "";
   display: block;
