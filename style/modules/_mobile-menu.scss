@@ -17,25 +17,29 @@ $cMenuOpen: $cBlack;
 
     &__btn {
         position: fixed;
-        top: 10px;
-        right: 10px;
+        top: 5px;
+        right: 5px;
         background-color: unset;
         border: none;
         outline: none !important;
         cursor: pointer;
         z-index: 20;
+
+        & > span{
+            color: orange;
+        }
     
-        & > span {
-            background-color: rgb(233, 140, 0);
-            width: 35px;
-            height: 2px;
+        & > span:before {
+            content: "";
             display: block;
-            margin-bottom: 9px;
+            margin-bottom: 2px;
+            margin-left: 5px;
             transition: transform 0.7s;
-    
-            &:last-child {
-                margin-bottom: 0;
-            }
+            background: url(/img/site-logo.png);
+            background-size: cover;
+            width: 30px;
+            height: 30px;
+            
         }
     }  
 }
