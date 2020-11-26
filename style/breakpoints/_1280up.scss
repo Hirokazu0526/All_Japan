@@ -96,11 +96,7 @@ header{
           width: 40%;
           opacity: 0;
           z-index: 5;
-          animation-name: fadeIn;
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
           animation-delay: 2s;
-          animation-timing-function: ease-in-out;
        }
        &_02{
           top: 180px;
@@ -108,11 +104,7 @@ header{
           width: 40%;
           opacity: 0;
           z-index: 5;
-          animation-name: fadeIn;
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
           animation-delay: 2.5s;
-          animation-timing-function: ease-in-out;
        }
        &_03{
           top: 20px; 
@@ -120,11 +112,7 @@ header{
           width: 40%;
           opacity: 0;
           z-index: 4;
-          animation-name: fadeIn;
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
           animation-delay: 3s;
-          animation-timing-function: ease-in-out;
        }
        &_04{
           top: 180px;
@@ -132,11 +120,7 @@ header{
           width: 40%;
           opacity: 0;
           z-index: 5;
-          animation-name: fadeIn;
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
           animation-delay: 3.5s;
-          animation-timing-function: ease-in-out;
        }
        &_05{
           top: 180px;
@@ -144,23 +128,15 @@ header{
           width: 40%;
           opacity: 0;
           z-index: 5;
-          animation-name: fadeIn;
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
           animation-delay: 4s;
-          animation-timing-function: ease-in-out;
        }
        &_06{
           top: -50px;
-          right: 40px;
+          right: 90px;
           width: 30%;
           opacity: 0;
           z-index: 3;
-          animation-name: fadeIn;
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
           animation-delay: 4.5s;
-          animation-timing-function: ease-in-out;
       }
        &_07{
           top: -20px;
@@ -168,11 +144,7 @@ header{
           width: 40%;
           opacity: 0;
           z-index: 5;
-          animation-name: fadeIn;
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
           animation-delay: 5s;
-          animation-timing-function: ease-in-out;
       }
        &_08{
           top: -40px;
@@ -180,11 +152,7 @@ header{
           width: 40%;
           opacity: 0;
           z-index: 5;
-          animation-name: fadeIn;
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
           animation-delay: 5.5s;
-          animation-timing-function: ease-in-out;
        }
        &_09{
           top: 90px;
@@ -192,28 +160,14 @@ header{
           width: 50%;
           opacity: 0;
           z-index: 20;
-          animation-name: fadeIn;
-          animation-duration: 1.2s;
-          animation-fill-mode: forwards;
           animation-delay: 6s;
-          animation-timing-function: ease-in-out;
        }
 
-       & > img{
-         opacity: 0;//imgの表示
-       }    
   }
 }
 
 
-@keyframes fadeIn {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-}
+
 
 .sttl{
   display: flex;
