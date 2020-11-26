@@ -561,8 +561,8 @@ img {
 
 .mobile-menu__btn {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   background-color: unset;
   border: none;
   outline: none !important;
@@ -571,19 +571,22 @@ img {
 }
 
 .mobile-menu__btn > span {
-  background-color: #e98c00;
-  width: 35px;
-  height: 2px;
+  color: orange;
+}
+
+.mobile-menu__btn > span:before {
+  content: "";
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 2px;
+  margin-left: 5px;
   -webkit-transition: -webkit-transform 0.7s;
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
-}
-
-.mobile-menu__btn > span:last-child {
-  margin-bottom: 0;
+  background: url(/img/site-logo.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
 }
 
 .mobile-inner {
@@ -927,20 +930,19 @@ header {
 }
 
 .main-area {
-  height: 650px;
+  height: 560px;
 }
 
 .main_kv {
   position: relative;
-  width: 100vw;
   height: 560px;
   display: block;
 }
 
 .main_kv_01 {
-  top: 440px;
+  top: 348px;
   right: 0px;
-  width: 75%;
+  width: 66%;
   opacity: 0;
   z-index: 5;
   -webkit-animation-name: fadeIn;
@@ -956,9 +958,9 @@ header {
 }
 
 .main_kv_02 {
-  top: 480px;
+  top: 380px;
   left: -10px;
-  width: 60%;
+  width: 56%;
   opacity: 0;
   z-index: 5;
   -webkit-animation-name: fadeIn;
@@ -974,9 +976,9 @@ header {
 }
 
 .main_kv_03 {
-  top: 385px;
-  left: -10px;
-  width: 93%;
+  top: 314px;
+  left: 12px;
+  width: 85%;
   opacity: 0;
   z-index: 21;
   -webkit-animation-name: fadeIn;
@@ -993,7 +995,7 @@ header {
 
 .main_kv_04 {
   top: 12px;
-  left: -224px;
+  left: -164px;
   width: 83%;
   opacity: 0;
   z-index: 4;
@@ -1010,7 +1012,7 @@ header {
 }
 
 .main_kv_05 {
-  top: -19px;
+  top: -8px;
   right: 9px;
   width: 65%;
   opacity: 0;
@@ -1046,7 +1048,7 @@ header {
 }
 
 .main_kv_07 {
-  top: 180px;
+  top: 128px;
   right: 0px;
   width: 70%;
   opacity: 0;
@@ -1064,8 +1066,8 @@ header {
 }
 
 .main_kv_08 {
-  top: 180px;
-  left: -120px;
+  top: 137px;
+  left: -90px;
   width: 90%;
   opacity: 0;
   z-index: 5;
@@ -1082,7 +1084,7 @@ header {
 }
 
 .main_kv_09 {
-  top: 150px;
+  top: 120px;
   left: 13px;
   width: 90%;
   opacity: 0;
@@ -1100,25 +1102,69 @@ header {
 }
 
 .main_kv > img {
-  opacity: 0;
+  opacity: 1;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.sttl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.sttl_text {
+  font-size: .8rem;
+  color: white;
+  font-family: "Audiowide";
+  display: inline-block;
+  text-align: center;
+  z-index: 30;
+  opacity: 1;
+  position: absolute;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.sttl_text.catch_cp {
+  width: 100%;
+  font-size: 2rem;
+  color: #866e02;
+  text-shadow: 2px 2px 1px white;
+  top: 320px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sttl_text.s2019 {
+  top: 540px;
+  left: 200px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sttl_text.w2019 {
+  top: 380px;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sttl_text.s2020 {
+  top: 162px;
+  right: 10px;
+  line-height: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 details {
@@ -1282,6 +1328,75 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+  .main_kv {
+    position: relative;
+    width: 100vw;
+    height: 736px;
+    display: block;
+  }
+  .main_kv_01 {
+    top: 440px;
+    right: 0px;
+    width: 75%;
+    opacity: 0;
+    z-index: 5;
+  }
+  .main_kv_02 {
+    top: 480px;
+    left: -10px;
+    width: 60%;
+    opacity: 0;
+    z-index: 5;
+  }
+  .main_kv_03 {
+    top: 385px;
+    left: -10px;
+    width: 93%;
+    opacity: 0;
+    z-index: 21;
+  }
+  .main_kv_04 {
+    top: 12px;
+    left: -224px;
+    width: 83%;
+    opacity: 0;
+    z-index: 4;
+  }
+  .main_kv_05 {
+    top: -19px;
+    right: 9px;
+    width: 65%;
+    opacity: 0;
+    z-index: 6;
+  }
+  .main_kv_06 {
+    top: -17px;
+    left: 59px;
+    width: 75%;
+    opacity: 0;
+    z-index: 3;
+  }
+  .main_kv_07 {
+    top: 180px;
+    right: 0px;
+    width: 70%;
+    opacity: 0;
+    z-index: 5;
+  }
+  .main_kv_08 {
+    top: 180px;
+    left: -120px;
+    width: 90%;
+    opacity: 0;
+    z-index: 5;
+  }
+  .main_kv_09 {
+    top: 150px;
+    left: 13px;
+    width: 90%;
+    opacity: 0;
+    z-index: 20;
+  }
   #Sponsor {
     background: #fff;
     margin-top: 120px;
@@ -1447,16 +1562,8 @@ Stylesheet: 1280px以上のモニタで適用
     width: 40%;
     opacity: 0;
     z-index: 5;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
   }
   .main_kv_02 {
     top: 180px;
@@ -1464,16 +1571,8 @@ Stylesheet: 1280px以上のモニタで適用
     width: 40%;
     opacity: 0;
     z-index: 5;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 2.5s;
             animation-delay: 2.5s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
   }
   .main_kv_03 {
     top: 20px;
@@ -1481,16 +1580,8 @@ Stylesheet: 1280px以上のモニタで適用
     width: 40%;
     opacity: 0;
     z-index: 4;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
   }
   .main_kv_04 {
     top: 180px;
@@ -1498,16 +1589,8 @@ Stylesheet: 1280px以上のモニタで適用
     width: 40%;
     opacity: 0;
     z-index: 5;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 3.5s;
             animation-delay: 3.5s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
   }
   .main_kv_05 {
     top: 180px;
@@ -1515,33 +1598,17 @@ Stylesheet: 1280px以上のモニタで適用
     width: 40%;
     opacity: 0;
     z-index: 5;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 4s;
             animation-delay: 4s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
   }
   .main_kv_06 {
     top: -50px;
-    right: 40px;
+    right: 90px;
     width: 30%;
     opacity: 0;
     z-index: 3;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 4.5s;
             animation-delay: 4.5s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
   }
   .main_kv_07 {
     top: -20px;
@@ -1549,16 +1616,8 @@ Stylesheet: 1280px以上のモニタで適用
     width: 40%;
     opacity: 0;
     z-index: 5;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 5s;
             animation-delay: 5s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
   }
   .main_kv_08 {
     top: -40px;
@@ -1566,16 +1625,8 @@ Stylesheet: 1280px以上のモニタで適用
     width: 40%;
     opacity: 0;
     z-index: 5;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 5.5s;
             animation-delay: 5.5s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
   }
   .main_kv_09 {
     top: 90px;
@@ -1583,35 +1634,8 @@ Stylesheet: 1280px以上のモニタで適用
     width: 50%;
     opacity: 0;
     z-index: 20;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1.2s;
-            animation-duration: 1.2s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-animation-delay: 6s;
             animation-delay: 6s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-  }
-  .main_kv > img {
-    opacity: 0;
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   .sttl {
     display: -webkit-box;
@@ -1793,31 +1817,5 @@ Stylesheet: 1280px以上のモニタで適用
     width: 100%;
     margin-top: 30px;
   }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /******************************************************************
-
-Stylesheet: Retinaディスプレイで適用
-
-******************************************************************/
-  /* 
-
-EXAMPLE 
-.icon {
-	background: url(images/test@2x.png) no-repeat;
-	background-size: 24px 24px;
-}
-
-
-*/
-}
-
-@media print {
-  /******************************************************************
-
-Stylesheet: プリンタのみに適用
-
-******************************************************************/
 }
 /*# sourceMappingURL=style.css.map */
