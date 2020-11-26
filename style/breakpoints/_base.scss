@@ -164,7 +164,7 @@ header{
           animation-timing-function: ease-in-out;
        }
        &_05{
-          top: -19px;
+          top: -8px;
           right: 9px;
           width: 65%;
           opacity: 0;
@@ -225,21 +225,68 @@ header{
        }
 
        & > img{
-         opacity: 0;//imgの表示
+         opacity: 1;//imgの表示
        }    
   }
 }
 
 
-@keyframes fadeIn {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
+// @keyframes fadeIn {
+//   0% {
+//       opacity: 0;
+//   }
+//   100% {
+//       opacity: 1;
+//   }
+// }
+
+.sttl{
+  display: flex;
+  justify-content: space-around;
+  
+  &_text{
+      font-size: .8rem;
+      color: white;
+      font-family: $Au;
+      display: inline-block;
+      text-align: center;
+      z-index: 30;
+      opacity: 1;//whoistheChampionのテキスト
+      position: absolute;
+      animation-name: fadeIn;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-delay: 6.5s;
+      animation-timing-function: ease-in-out;
+
+      &.catch_cp{
+        width: 100%;
+        font-size: 2rem;
+        color: rgb(134, 110, 2);
+        text-shadow: 2px 2px 1px white;
+        top: 320px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &.s2019{
+          top: 540px;
+          left: 200px;
+          transform: translateY(-50%);
+      }
+      &.w2019{
+          top: 380px;
+          left: 10px;
+          transform: translateY(-50%);
+      }
+      &.s2020{
+          top: 162px;
+          right: 10px;
+          line-height: 15px;
+          transform: translateY(-50%);
+      }
   }
 }
-
 
 details{
   width: 100%;
