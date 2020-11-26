@@ -570,10 +570,6 @@ img {
   z-index: 20;
 }
 
-.mobile-menu__btn > span {
-  color: orange;
-}
-
 .mobile-menu__btn > span:before {
   content: "";
   display: block;
@@ -583,7 +579,7 @@ img {
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
-  background: url(img/site-logo.png);
+  background: url(/img/site-logo.png);
   background-size: cover;
   width: 30px;
   height: 30px;
@@ -595,8 +591,8 @@ img {
   right: -300px;
   width: 300px;
   height: 100vh;
-  background: rgba(0, 8, 90, 0.8);
-  z-index: 19;
+  background: rgba(209, 245, 195, 0.8);
+  z-index: 50;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
@@ -696,31 +692,6 @@ img {
 .menu-open .mobile-menu__item:nth-child(5) {
   -webkit-transition-delay: 0.35s;
           transition-delay: 0.35s;
-}
-
-.menu-open .mobile-menu__btn > span {
-  background-color: #e98c00;
-}
-
-.menu-open .mobile-menu__btn > span:nth-child(1) {
-  -webkit-transition-delay: 70ms;
-          transition-delay: 70ms;
-  -webkit-transform: translateY(11px) rotate(135deg);
-          transform: translateY(11px) rotate(135deg);
-}
-
-.menu-open .mobile-menu__btn > span:nth-child(2) {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-  -webkit-transform: translateX(-18px) scaleX(0);
-          transform: translateX(-18px) scaleX(0);
-}
-
-.menu-open .mobile-menu__btn > span:nth-child(3) {
-  -webkit-transition-delay: 140ms;
-          transition-delay: 140ms;
-  -webkit-transform: translateY(-11px) rotate(-135deg);
-          transform: translateY(-11px) rotate(-135deg);
 }
 
 .sd {
