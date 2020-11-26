@@ -3,7 +3,8 @@
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-&_kv{
+.main{
+  &_kv{
   position: relative;
   width: 100vw;
   height: 736px;
@@ -15,11 +16,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 75%;
       opacity: 0;
       z-index: 5;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-delay: 3.5s;
-      animation-timing-function: ease-in-out;
+      
    }
    &_02{
       top: 480px;
@@ -27,11 +24,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 60%;
       opacity: 0;
       z-index: 5;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-delay: 4s;
-      animation-timing-function: ease-in-out;
    }
    &_03{
       top: 385px;
@@ -39,11 +31,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 93%;
       opacity: 0;
       z-index: 21;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-delay: 4.5s;
-      animation-timing-function: ease-in-out;
    }
    &_04{
       top: 12px;
@@ -51,11 +38,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 83%;
       opacity: 0;
       z-index: 4;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-delay: 2s;
-      animation-timing-function: ease-in-out;
    }
    &_05{
       top: -19px;
@@ -63,11 +45,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 65%;
       opacity: 0;
       z-index: 6;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-delay: 2.5s;
-      animation-timing-function: ease-in-out;
    }
    &_06{
       top: -17px;
@@ -75,11 +52,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 75%;
       opacity: 0;
       z-index: 3;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-delay: 3s;
-      animation-timing-function: ease-in-out;
   }
    &_07{
       top: 180px;
@@ -87,11 +59,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 70%;
       opacity: 0;
       z-index: 5;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-delay: 5s;
-      animation-timing-function: ease-in-out;
   }
    &_08{
       top: 180px;
@@ -99,11 +66,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 90%;
       opacity: 0;
       z-index: 5;
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-delay: 5.5s;
-      animation-timing-function: ease-in-out;
    }
    &_09{
       top: 150px;
@@ -111,18 +73,10 @@ Stylesheet: 600px以上のタブレットやモニタで適用
       width: 90%;
       opacity: 0;
       z-index: 20;
-      animation-name: fadeIn;
-      animation-duration: 1.2s;
-      animation-fill-mode: forwards;
-      animation-delay: 6s;
-      animation-timing-function: ease-in-out;
    }
-
-   & > img{
-     opacity: 0;//imgの表示
-   }    
+  
 }
-
+}
 
 
 
