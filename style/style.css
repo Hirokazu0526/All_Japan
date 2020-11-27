@@ -823,10 +823,6 @@ a {
   text-decoration: none;
 }
 
-.abl {
-  position: absolute;
-}
-
 header {
   position: relative;
 }
@@ -904,19 +900,23 @@ header {
   cursor: pointer;
 }
 
+.abl {
+  position: absolute;
+}
+
 .main-area {
-  height: 560px;
+  height: 100vh;
 }
 
 .main_kv {
   position: relative;
-  height: 560px;
+  height: calc(560 / 414 * 100vw);
   display: block;
 }
 
 .main_kv_01 {
-  top: 348px;
-  right: 0px;
+  top: calc(448 / 414 * 100vw);
+  right: calc(0 / 414 * 100vw);
   width: 66%;
   opacity: 0;
   z-index: 5;
@@ -933,8 +933,8 @@ header {
 }
 
 .main_kv_02 {
-  top: 380px;
-  left: -10px;
+  top: calc(480 / 414 * 100vw);
+  left: calc(-10 / 414 * 100vw);
   width: 56%;
   opacity: 0;
   z-index: 5;
@@ -951,9 +951,9 @@ header {
 }
 
 .main_kv_03 {
-  top: 314px;
-  left: 12px;
-  width: 85%;
+  top: calc(400 / 414 * 100vw);
+  left: calc(12 / 414 * 100vw);
+  width: 88%;
   opacity: 0;
   z-index: 21;
   -webkit-animation-name: fadeIn;
@@ -969,8 +969,8 @@ header {
 }
 
 .main_kv_04 {
-  top: 12px;
-  left: -164px;
+  top: calc(12 / 414 * 100vw);
+  left: calc(-220 / 414 * 100vw);
   width: 83%;
   opacity: 0;
   z-index: 4;
@@ -987,8 +987,8 @@ header {
 }
 
 .main_kv_05 {
-  top: -8px;
-  right: 9px;
+  top: calc(-8 / 414 * 100vw);
+  right: calc(9 / 414 * 100vw);
   width: 65%;
   opacity: 0;
   z-index: 6;
@@ -1005,9 +1005,9 @@ header {
 }
 
 .main_kv_06 {
-  top: -17px;
-  left: 59px;
-  width: 75%;
+  top: calc(0 / 414 * 100vw);
+  left: calc(80 / 414 * 100vw);
+  width: 67%;
   opacity: 0;
   z-index: 3;
   -webkit-animation-name: fadeIn;
@@ -1023,11 +1023,11 @@ header {
 }
 
 .main_kv_07 {
-  top: 128px;
-  right: 0px;
+  top: calc(178 / 414 * 100vw);
+  right: calc(0 / 414 * 100vw);
   width: 70%;
   opacity: 0;
-  z-index: 5;
+  z-index: 6;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1.5s;
@@ -1041,8 +1041,8 @@ header {
 }
 
 .main_kv_08 {
-  top: 137px;
-  left: -90px;
+  top: calc(180 / 414 * 100vw);
+  left: calc(-130 / 414 * 100vw);
   width: 90%;
   opacity: 0;
   z-index: 5;
@@ -1059,9 +1059,9 @@ header {
 }
 
 .main_kv_09 {
-  top: 120px;
-  left: 13px;
-  width: 90%;
+  top: calc(150 / 414 * 100vw);
+  left: calc(10 / 414 * 100vw);
+  width: 93%;
   opacity: 0;
   z-index: 20;
   -webkit-animation-name: fadeIn;
@@ -1114,29 +1114,29 @@ header {
   font-size: 2rem;
   color: #866e02;
   text-shadow: 2px 2px 1px white;
-  top: 320px;
-  left: 50%;
+  top: calc(410 / 414 * 100vw);
+  left: calc(207 / 414 * 100vw);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 .sttl_text.s2019 {
-  top: 540px;
-  left: 200px;
+  top: calc(700 / 414 * 100vw);
+  left: calc(260/ 414 * 100vw);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .sttl_text.w2019 {
-  top: 380px;
-  left: 10px;
+  top: calc(480 / 414 * 100vw);
+  left: calc(10 / 414 * 100vw);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .sttl_text.s2020 {
-  top: 162px;
-  right: 10px;
+  top: calc(220 / 414 * 100vw);
+  right: calc(10 / 414 * 100vw);
   line-height: 15px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
