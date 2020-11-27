@@ -583,7 +583,7 @@ img {
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s;
-  background-image: url(img/site-logo.png);
+  background-image: url(https://github.com/Hirokazu0526/All_Japan/blob/master/img/site-logo.png);
   background-size: cover;
   width: 30px;
   height: 30px;
@@ -595,7 +595,7 @@ img {
   right: -300px;
   width: 300px;
   height: 100vh;
-  background: rgba(209, 245, 195, 0.8);
+  background: rgba(5, 34, 8, 0.8);
   z-index: 50;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
@@ -624,8 +624,8 @@ img {
 .mobile-nav-list a {
   display: inline-block;
   font-size: 2rem;
-  color: #ff0000;
-  background: -webkit-linear-gradient(0deg, #ff1100, #9A1D1D, #ff1100);
+  color: #ffffff;
+  background: -webkit-linear-gradient(0deg, #ffffff, #ffffff, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
