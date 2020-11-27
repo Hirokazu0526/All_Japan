@@ -833,6 +833,84 @@ header {
   padding: 0;
 }
 
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.loading img {
+  width: 50px;
+}
+
+.loading.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@-webkit-keyframes flashing {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes flashing {
+  50% {
+    opacity: .5;
+  }
+}
+
+@-webkit-keyframes roolling {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes roolling {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  -webkit-animation: flashing .5s infinite;
+          animation: flashing .5s infinite;
+  color: #2dbe39;
+}
+
+.loadingball {
+  -webkit-animation: roolling 1s ease-in-out infinite;
+          animation: roolling 1s ease-in-out infinite;
+}
+
 .header_area {
   width: 100%;
   height: 50px;

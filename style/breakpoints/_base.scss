@@ -38,6 +38,57 @@ header{
   padding: 0;
 }
 
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.loading{
+img{
+  width: 50px;
+}
+}
+
+.loading.active{
+  opacity: 1;
+  visibility: visible;
+}
+@keyframes flashing{
+  50%{
+    opacity: .5;
+  }
+}
+@keyframes roolling{
+  0%{
+    transform: rotate(0);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText{
+  animation: flashing .5s infinite;
+  color: rgb(45, 190, 57);
+}
+.loadingball{
+  animation: roolling 1s ease-in-out infinite;
+}
+
+
 // headerここから
 .header{
   &_area{
