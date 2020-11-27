@@ -226,20 +226,20 @@ header{
        }
 
        & > img{
-         opacity: 1;//imgの表示
+         opacity: 0;//imgの表示
        }    
   }
 }
 
 
-// @keyframes fadeIn {
-//   0% {
-//       opacity: 0;
-//   }
-//   100% {
-//       opacity: 1;
-//   }
-// }
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 
 .sttl{
   display: flex;
