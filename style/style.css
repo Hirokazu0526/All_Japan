@@ -1129,10 +1129,10 @@ header {
 
 .sttl_text.catch_cp {
   width: 100%;
-  font-size: 2rem;
+  font-size: 2.2em;
   color: #866e02;
   text-shadow: 2px 2px 1px white;
-  top: calc(410 / 414 * 100vw);
+  top: calc(410 / 420 * 100vw);
   left: calc(207 / 414 * 100vw);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
