@@ -1155,25 +1155,7 @@ header {
 }
 
 .main_kv > img {
-  opacity: 0;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  opacity: 1;
 }
 
 .sttl {
@@ -1191,7 +1173,7 @@ header {
   display: inline-block;
   text-align: center;
   z-index: 30;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
@@ -1399,74 +1381,153 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+  .mobile-inner {
+    display: none;
+  }
+  .main-area {
+    height: 400px;
+  }
   .main_kv {
     position: relative;
-    width: 100vw;
-    height: 736px;
+    height: 400px;
     display: block;
   }
   .main_kv_01 {
-    top: 440px;
-    right: 0px;
-    width: 75%;
+    top: calc(100 / 660 * 100vw);
+    left: calc(-130 / 660 * 100vw);
+    width: 40%;
     opacity: 0;
     z-index: 5;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
   }
   .main_kv_02 {
-    top: 480px;
-    left: -10px;
-    width: 60%;
-    opacity: 0;
-    z-index: 5;
-  }
-  .main_kv_03 {
-    top: 385px;
-    left: -10px;
-    width: 93%;
-    opacity: 0;
-    z-index: 21;
-  }
-  .main_kv_04 {
-    top: 12px;
-    left: -224px;
-    width: 83%;
-    opacity: 0;
-    z-index: 4;
-  }
-  .main_kv_05 {
-    top: -19px;
-    right: 9px;
-    width: 65%;
+    top: calc(120 / 660 * 100vw);
+    left: calc(80 / 660 * 100vw);
+    width: 35%;
     opacity: 0;
     z-index: 6;
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  .main_kv_03 {
+    top: calc(10 / 660 * 100vw);
+    left: calc(-20 / 660 * 100vw);
+    width: 40%;
+    opacity: 0;
+    z-index: 4;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  .main_kv_04 {
+    top: calc(80 / 660 * 100vw);
+    left: calc(340 / 660 * 100vw);
+    width: 45%;
+    opacity: 0;
+    z-index: 5;
+    -webkit-animation-delay: 3.5s;
+            animation-delay: 3.5s;
+  }
+  .main_kv_05 {
+    top: calc(100 / 660 * 100vw);
+    right: calc(120 / 660 * 100vw);
+    width: 40%;
+    opacity: 0;
+    z-index: 5;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
   }
   .main_kv_06 {
-    top: -17px;
-    left: 59px;
-    width: 75%;
+    top: calc(-20 / 660 * 100vw);
+    left: calc(430 / 660 * 100vw);
+    width: 30%;
     opacity: 0;
     z-index: 3;
+    -webkit-animation-delay: 4.5s;
+            animation-delay: 4.5s;
   }
   .main_kv_07 {
-    top: 180px;
-    right: 0px;
-    width: 70%;
+    top: calc(0 / 660 * 100vw);
+    left: calc(200 / 660 * 100vw);
+    width: 37%;
     opacity: 0;
     z-index: 5;
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
   }
   .main_kv_08 {
-    top: 180px;
-    left: -120px;
-    width: 90%;
+    top: calc(-25 / 660 * 100vw);
+    left: calc(110 / 660 * 100vw);
+    width: 40%;
     opacity: 0;
     z-index: 5;
+    -webkit-animation-delay: 5.5s;
+            animation-delay: 5.5s;
   }
   .main_kv_09 {
-    top: 150px;
-    left: 13px;
-    width: 90%;
+    top: calc(50 / 660 * 100vw);
+    left: calc(150 / 660 * 100vw);
+    width: 50%;
     opacity: 0;
     z-index: 20;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+  }
+  .sttl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sttl_text {
+    font-size: .8rem;
+    color: white;
+    font-family: "Audiowide";
+    display: inline-block;
+    text-align: center;
+    z-index: 30;
+    opacity: 1;
+    position: absolute;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 6.5s;
+            animation-delay: 6.5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  .sttl_text.catch_cp {
+    width: 100%;
+    font-size: 2.7em;
+    color: #866e02;
+    text-shadow: 2px 2px 1px white;
+    top: calc(170 / 400 * 100vw);
+    left: calc(200 / 400 * 100vw);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .sttl_text.s2019 {
+    top: calc(200 / 400 * 100vw);
+    left: calc(50/ 400 * 100vw);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .sttl_text.w2019 {
+    top: calc(200 / 400 * 100vw);
+    left: calc(170 / 400 * 100vw);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .sttl_text.s2020 {
+    top: calc(200 / 400 * 100vw);
+    right: calc(40 / 400 * 100vw);
+    line-height: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   #Sponsor {
     background: #fff;
@@ -1619,94 +1680,12 @@ Stylesheet: 1280px以上のモニタで適用
     cursor: pointer;
   }
   .main-area {
-    height: 650px;
+    height: 664px;
   }
   .main_kv {
     position: relative;
-    width: 100vw;
-    height: 660px;
+    height: 664px;
     display: block;
-  }
-  .main_kv_01 {
-    top: 200px;
-    left: -50px;
-    width: 40%;
-    opacity: 0;
-    z-index: 5;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-  }
-  .main_kv_02 {
-    top: 180px;
-    left: 250px;
-    width: 40%;
-    opacity: 0;
-    z-index: 5;
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
-  }
-  .main_kv_03 {
-    top: 20px;
-    left: -10px;
-    width: 40%;
-    opacity: 0;
-    z-index: 4;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-  }
-  .main_kv_04 {
-    top: 180px;
-    right: 20px;
-    width: 40%;
-    opacity: 0;
-    z-index: 5;
-    -webkit-animation-delay: 3.5s;
-            animation-delay: 3.5s;
-  }
-  .main_kv_05 {
-    top: 180px;
-    right: 20px;
-    width: 40%;
-    opacity: 0;
-    z-index: 5;
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s;
-  }
-  .main_kv_06 {
-    top: -50px;
-    right: 90px;
-    width: 30%;
-    opacity: 0;
-    z-index: 3;
-    -webkit-animation-delay: 4.5s;
-            animation-delay: 4.5s;
-  }
-  .main_kv_07 {
-    top: -20px;
-    left: 590px;
-    width: 40%;
-    opacity: 0;
-    z-index: 5;
-    -webkit-animation-delay: 5s;
-            animation-delay: 5s;
-  }
-  .main_kv_08 {
-    top: -40px;
-    left: 280px;
-    width: 40%;
-    opacity: 0;
-    z-index: 5;
-    -webkit-animation-delay: 5.5s;
-            animation-delay: 5.5s;
-  }
-  .main_kv_09 {
-    top: 90px;
-    left: 350px;
-    width: 50%;
-    opacity: 0;
-    z-index: 20;
-    -webkit-animation-delay: 6s;
-            animation-delay: 6s;
   }
   .sttl {
     display: -webkit-box;
@@ -1722,7 +1701,7 @@ Stylesheet: 1280px以上のモニタで適用
     display: inline-block;
     text-align: center;
     z-index: 30;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
@@ -1761,6 +1740,7 @@ Stylesheet: 1280px以上のモニタで適用
     right: 100px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    line-height: 35px;
   }
   .kv img {
     width: 580px;
