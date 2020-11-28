@@ -79,94 +79,19 @@ header{
       }
   }
 }
+
 .main{
   &-area{
-    height: 650px;
+    height: 664px;
   }
 
   &_kv{
-      position: relative;
-      width: 100vw;
-      height: 660px;
-      display: block;
-
-       &_01{
-          top: 200px; 
-          left: -50px;
-          width: 40%;
-          opacity: 0;
-          z-index: 5;
-          animation-delay: 2s;
-       }
-       &_02{
-          top: 180px;
-          left: 250px;
-          width: 40%;
-          opacity: 0;
-          z-index: 5;
-          animation-delay: 2.5s;
-       }
-       &_03{
-          top: 20px; 
-          left: -10px;
-          width: 40%;
-          opacity: 0;
-          z-index: 4;
-          animation-delay: 3s;
-       }
-       &_04{
-          top: 180px;
-          right: 20px;
-          width: 40%;
-          opacity: 0;
-          z-index: 5;
-          animation-delay: 3.5s;
-       }
-       &_05{
-          top: 180px;
-          right: 20px;
-          width: 40%;
-          opacity: 0;
-          z-index: 5;
-          animation-delay: 4s;
-       }
-       &_06{
-          top: -50px;
-          right: 90px;
-          width: 30%;
-          opacity: 0;
-          z-index: 3;
-          animation-delay: 4.5s;
-      }
-       &_07{
-          top: -20px;
-          left: 590px;
-          width: 40%;
-          opacity: 0;
-          z-index: 5;
-          animation-delay: 5s;
-      }
-       &_08{
-          top: -40px;
-          left: 280px;
-          width: 40%;
-          opacity: 0;
-          z-index: 5;
-          animation-delay: 5.5s;
-       }
-       &_09{
-          top: 90px;
-          left: 350px;
-          width: 50%;
-          opacity: 0;
-          z-index: 20;
-          animation-delay: 6s;
-       }
-
+    position: relative;
+    
+    height: 664px;
+    display: block;
   }
 }
-
-
 
 
 .sttl{
@@ -180,7 +105,7 @@ header{
       display: inline-block;
       text-align: center;
       z-index: 30;
-      opacity: 0;//whoistheChampionのテキスト
+      opacity: 1;//whoistheChampionのテキスト
       position: absolute;
       animation-name: fadeIn;
       animation-duration: 1.5s;
@@ -212,6 +137,7 @@ header{
           top: 650px;
           right: 100px;
           transform: translateY(-50%);
+          line-height: 35px;
       }
   }
 }
