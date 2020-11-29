@@ -1030,7 +1030,7 @@ header {
 }
 
 .main-area {
-  height: 95vh;
+  height: 91vh;
 }
 
 .main_kv {
@@ -1268,7 +1268,7 @@ header {
 }
 
 .section-inner {
-  padding-top: 40px;
+  padding-top: 33px;
 }
 
 .section-info {
@@ -1401,6 +1401,16 @@ details[open] .group {
   background: #fff;
   font-weight: bold;
   font-size: 15px;
+}
+
+.live-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .live-subttl {
