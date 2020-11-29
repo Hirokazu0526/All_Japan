@@ -960,12 +960,6 @@ header {
   height: 100%;
 }
 
-.header_nav_list_item:nth-child(2) a {
-  color: red;
-  font-size: 1.7rem;
-  font-family: "Audiowide";
-}
-
 .header_nav_list_item a {
   text-decoration: none;
   display: block;
@@ -1296,6 +1290,54 @@ details[open] .group {
   font-size: 15px;
 }
 
+.live-subttl {
+  font-family: "Audiowide";
+  font-size: 1.8rem !important;
+  color: white !important;
+}
+
+.live-img-pc {
+  display: none;
+}
+
+.live-text-item {
+  margin-top: 10px;
+}
+
+.live-text-item-m {
+  font-size: 1.2rem !important;
+  color: #47FF2F !important;
+}
+
+.live-text-item-m > span {
+  color: white;
+}
+
+.live-text-item-w {
+  font-size: 1.2rem !important;
+  color: #FF58D9 !important;
+}
+
+.live-text-item-w > span {
+  color: white;
+}
+
+.live-text-item-s {
+  font-size: 1.2rem !important;
+  color: #08BDFF !important;
+}
+
+.live-text-item-s > span {
+  color: white;
+}
+
+.live-text-item .information {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Sawarabi Gothic";
+}
+
 summary {
   background: red;
   cursor: pointer;
@@ -1305,6 +1347,10 @@ summary {
   color: white;
   margin-bottom: 5px;
   text-align: center;
+}
+
+.tn {
+  font-size: 13px;
 }
 
 #Sponsor {
@@ -1529,6 +1575,16 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  .live-text-item .information {
+    font-size: 25px;
+  }
+  .live-img-pc {
+    display: block;
+  }
+  .live-img-sp {
+    display: none;
+    margin: 0 auto;
+  }
   #Sponsor {
     background: #fff;
     margin-top: 120px;
@@ -1579,6 +1635,13 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .live-img-pc {
+    display: block;
+    width: 90%;
+  }
+  .live-img-sp {
+    display: none;
+  }
   .sponsor-logo a {
     display: block;
     width: 280px;
@@ -1663,21 +1726,19 @@ Stylesheet: 1280px以上のモニタで適用
   .header_nav_list_item {
     height: 100%;
   }
-  .header_nav_list_item:nth-child(2) a {
-    color: red;
-    font-size: 1.7rem;
-    font-family: "Audiowide";
-  }
   .header_nav_list_item a {
     text-decoration: none;
     display: block;
     width: 100%;
     height: 100%;
     line-height: 20px;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color: aqua;
     font-family: "Audiowide";
     cursor: pointer;
+  }
+  .header_nav_list_item a:hover {
+    color: red;
   }
   .main-area {
     height: 664px;
@@ -1835,7 +1896,7 @@ Stylesheet: 1280px以上のモニタで適用
     vertical-align: middle;
     border-right: 2px solid #aaa;
     border-bottom: 2px solid #aaa;
-    height: 75px;
+    height: 40px;
   }
   .group th:last-child, .group td:last-child {
     border-right: none;
@@ -1847,7 +1908,7 @@ Stylesheet: 1280px以上のモニタで適用
   .group td {
     background: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 12px;
   }
   summary {
     background: red;
@@ -1858,6 +1919,37 @@ Stylesheet: 1280px以上のモニタで適用
     color: white;
     margin-bottom: 5px;
     text-align: center;
+  }
+  .live-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .live-subttl {
+    font-size: 2.3rem !important;
+  }
+  .live-text-item .information {
+    width: 500px;
+    font-size: 1.3rem;
+  }
+  .live-text-item-m {
+    font-size: 2rem !important;
+  }
+  .live-text-item-w {
+    font-size: 2rem !important;
+  }
+  .live-text-item-s {
+    font-size: 2rem !important;
+  }
+  .live-img-pc {
+    display: block;
+  }
+  .live-img-sp {
+    display: none;
+    margin: 0 auto;
   }
   .sponsor-logo a {
     display: block;
