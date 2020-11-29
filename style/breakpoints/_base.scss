@@ -25,6 +25,46 @@ ul,li{
 a{
   text-decoration: none;
 }
+.font-fmA {
+  font-family: $Au;
+}
+.font-fmS {
+  font-family: $Sw;
+}
+.font-fmSg{
+  font-family: $Sg;
+}
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 17px;
+}
+.font-lr {
+  font-size: 17px;
+}
+.font-lg {
+  font-size: 25px;
+}
+.font-gd{
+  font-size: 1.3rem ;
+  color: rgb(243, 240, 92) ;
+}
+.mb-sm {
+  margin-bottom: 10px;
+}
+.mb-lg {
+  margin-bottom: 80px;
+}
+.mt{
+  margin-top: 30px;
+}
+.pb-sm {
+  padding-bottom: 16px;
+}
+.pb-lg {
+  padding-bottom: 80px;
+}
 
 
 header{
@@ -340,6 +380,63 @@ img{
   }
 }
 
+.section{
+  &-inner{
+    padding-top: 40px;
+  }
+
+  &-info{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  &-title{
+    // color: #9A1D1D;
+    background: -webkit-linear-gradient(0deg, #ff1100, #9A1D1D, #ff1100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+  }
+
+  &-subttl{
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+    &-winner{
+      font-size: 14px;
+      color: red;
+    }
+  }
+
+  &-text{
+    p{
+      color: white;
+      font-size: 0.9rem;
+    }
+  }
+  &-group h4{
+    font-size: 12px;
+    color: white;
+  }
+
+  &-adress{
+    color: $cWhite;
+    line-height: 30px;
+    h3{
+      font-size: 1rem;
+    }
+    p{
+      font-size: 0.8rem;
+      line-height: 25px;
+    }
+  }
+}
+
+.pc{//タイムスケジュールpc用のオフ
+  display: none;
+}
+
 details{
   width: 100%;
   margin-bottom: 5px;
@@ -372,6 +469,7 @@ details[open] .group {
   border: 2px solid #aaa;
   width: 570px;
   table-layout: fixed;
+  
   
   
 
@@ -417,7 +515,7 @@ details[open] .group {
 
   &-subttl{
     font-family: $Au;
-    font-size: 1.8rem!important;
+    font-size: 1.3rem;
     color: white!important;
     
     
@@ -481,6 +579,23 @@ summary {
 .tn{
   font-size: 13px;
 }
+
+.gmap{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 80%;
+  position: relative;
+
+    iframe{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+}
+
 
 #Sponsor{
   background: #fff;
