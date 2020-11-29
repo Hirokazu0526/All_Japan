@@ -198,7 +198,7 @@ img{
 }
 .main{
   &-area{
-    height: 95vh;
+    height: 91vh;
   }
 
   &_kv{
@@ -382,7 +382,7 @@ img{
 
 .section{
   &-inner{
-    padding-top: 40px;
+    padding-top: 33px;
   }
 
   &-info{
@@ -512,6 +512,10 @@ details[open] .group {
 }
 
 .live{
+  &-info{
+    display: flex;
+    flex-direction: column;
+  }
 
   &-subttl{
     font-family: $Au;
