@@ -15,21 +15,21 @@ document.addEventListener('scroll', function(){
     const targetNavDistance = targetNav.getBoundingClientRect().bottom
 
     if(targetNavDistance <= 0){  
-        document.getElementById('groval-nav').classList.add('nav_fixed');
+        document.querySelector('groval-nav').classList.add('nav_fixed');
     }
     if(targetNavDistance > 0){
-        document.getElementById('groval-nav').classList.remove('nav_fixed');
+        document.querySelector('groval-nav').classList.remove('nav_fixed');
     }
 })
 
-const targetImg = document.querySelector('#main-slider');
-document.addEventListener('scroll', function(){
-    const targetImgDistance = targetNav.getBoundingClientRect().top + targetImg.clientHeight * .7
+// const targetImg = document.querySelector('#main-slider');
+// document.addEventListener('scroll', function(){
+//     const targetImgDistance = targetNav.getBoundingClientRect().top + targetImg.clientHeight * .7
 
-    if(targetImgDistance <= 0){  
-        document.getElementById('bg').classList.add('bg-active');
-    }
-})
+//     if(targetImgDistance <= 0){  
+//         document.getElementById('bg').classList.add('bg-active');
+//     }
+// })
 
 
 
