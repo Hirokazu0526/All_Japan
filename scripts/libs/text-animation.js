@@ -15,10 +15,10 @@ document.addEventListener('scroll', function(){
     const targetNavDistance = targetNav.getBoundingClientRect().bottom
 
     if(targetNavDistance <= 0){  
-        document.querySelector('groval-nav').classList.add('nav_fixed');
+        document.querySelector('.container').classList.add('nav_fixed');
     }
     if(targetNavDistance > 0){
-        document.querySelector('groval-nav').classList.remove('nav_fixed');
+        document.querySelector('#gloval-nav').classList.remove('nav_fixed');
     }
 })
 
