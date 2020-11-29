@@ -141,6 +141,75 @@ Stylesheet: 600px以上のタブレットやモニタで適用
    }
  }
 
+ .sp{
+   display: none;
+ }
+ .pc{
+   display: block;
+ }
+
+ .section{
+   &-inner{
+     padding-top: 90px;
+   }
+ 
+   &-info{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     
+     &-left{
+         width: 48%;
+     }
+     &-right{
+         width: 48%;
+     }
+
+     &.schedule{
+       flex-direction: column;
+
+       & .section-info-left{
+         width: 100%;
+       }        
+       & .section-info-right{
+         width: 100%;
+       }        
+     }
+
+     
+   }
+ 
+   &-group{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   &-title{
+     font-size: 2.5rem;
+   }
+ 
+   &-subttl{
+       font-size: 1.1rem;
+       &.stadium{
+           font-size: 1.8rem;
+       }
+ 
+   }
+ 
+ 
+   &-adress{
+     color: $cWhite;
+     line-height: 30px;
+     h3{
+       font-size: 1.2rem;
+     }
+     p{
+       font-size: 0.9rem;
+     }
+   }
+}
+
  .live{
    &-info{
    }
