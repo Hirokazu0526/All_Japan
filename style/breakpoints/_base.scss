@@ -131,11 +131,11 @@ img{
       &_item{
           height: 100%;
           
-          &:nth-child(2) a{
-              color: red;
-              font-size: 1.7rem;
-              font-family: $Au;
-          }
+          // &:nth-child(2) a{
+          //     color: red;
+          //     font-size: 1.7rem;
+          //     font-family: $Au;
+          // }
 
           & a{
               text-decoration: none;
@@ -375,55 +375,112 @@ details[open] .group {
   
   
 
-    th, td {
-      padding: 5px 5px;
-      vertical-align: middle;
-      border-right: 2px solid #aaa;
-      border-bottom: 2px solid #aaa;
-      height: 40px;
-      
-      
+  th, td {
+    padding: 5px 5px;
+    vertical-align: middle;
+    border-right: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    height: 40px;
+    
+    
 
-      &:last-child {
-        border-right: none;
-        width: 60px;
-      }
-      }
-  }
-
-
-  .group tr {
     &:last-child {
-      th, td {
-        border-bottom: none;
+      border-right: none;
+      width: 60px;
+    }
+  }
+}
+
+
+.group tr {
+  &:last-child {
+    th, td {
+      border-bottom: none;
+    }
+  }
+}
+
+// .group th {
+//   background: red;
+//   color: white;
+//   font-size: 16px;
+// }
+
+.group td {
+  background: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+
+.live{
+
+  &-subttl{
+    font-family: $Au;
+    font-size: 1.8rem!important;
+    color: white!important;
+    
+    
+  }
+  &-img{
+    &-pc{
+      display: none;
+    }
+    &-sp{
+     
+    }
+  }
+  &-text{
+    &-item{
+      margin-top: 10px;
+
+      &-m{
+        font-size: 1.2rem!important;
+        color: #47FF2F!important;
+        >span{
+          color: white;
+        }
+      }
+      &-w{
+        font-size: 1.2rem!important;
+        color: #FF58D9!important;
+        >span{
+          color: white;
+        }
+      }
+      &-s{
+        font-size: 1.2rem!important;
+        color: #08BDFF!important;
+        >span{
+          color: white;
+        }
+      }
+
+      & .information{
+        color: red;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: $Sg;
       }
     }
   }
-
-  // .group th {
-  //   background: red;
-  //   color: white;
-  //   font-size: 16px;
-  // }
-
-  .group td {
-    background: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    
-  }
+}
   
 
-  summary {
-    background: red;
-    cursor: pointer;
-    padding: 12px;
-    outline: none;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 5px;
-    text-align: center;
-  }
+summary {
+  background: red;
+  cursor: pointer;
+  padding: 12px;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.tn{
+  font-size: 13px;
+}
 
 #Sponsor{
   background: #fff;
