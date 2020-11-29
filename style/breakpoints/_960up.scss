@@ -3,6 +3,22 @@
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+
+.live{
+  &-img{
+    &-pc{
+      display: block;
+      width: 90%;
+    }
+    &-sp{
+      display: none;
+    }
+
+  }
+}
+
+
+
 .sponsor{
     &-logo{
      

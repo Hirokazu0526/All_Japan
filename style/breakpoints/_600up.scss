@@ -141,6 +141,30 @@ Stylesheet: 600px以上のタブレットやモニタで適用
    }
  }
 
+ .live{
+   &-info{
+   }
+   &-text{
+     &-item{
+       & .information{
+         // width: 290px;
+         font-size: 25px;
+       }
+     }
+   }
+ 
+   &-img{
+     &-pc{
+       display: block;
+       // margin: 0 auto;
+     }
+     &-sp{
+       display: none;
+       margin: 0 auto;
+     }
+   }
+ }
+
 
 
 
