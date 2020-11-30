@@ -388,6 +388,8 @@ img{
   &-info{
     display: flex;
     flex-direction: column;
+
+    
     
   }
 
@@ -520,39 +522,35 @@ details[open] .group {
   &-subttl{
     font-family: $Au;
     font-size: 1.3rem;
-    color: white!important;
-    
-    
+    color: white!important; 
   }
+
   &-img{
     &-pc{
       display: none;
-    }
-    &-sp{
-     
-    }
+    } 
   }
   &-text{
     &-item{
       margin-top: 10px;
 
       &-m{
-        font-size: 1.2rem!important;
-        color: #47FF2F!important;
+        font-size: 1.2rem;
+        color: #47FF2F;
         >span{
           color: white;
         }
       }
       &-w{
-        font-size: 1.2rem!important;
-        color: #FF58D9!important;
+        font-size: 1.2rem;
+        color: #FF58D9;
         >span{
           color: white;
         }
       }
       &-s{
-        font-size: 1.2rem!important;
-        color: #08BDFF!important;
+        font-size: 1.2rem;
+        color: #08BDFF;
         >span{
           color: white;
         }
