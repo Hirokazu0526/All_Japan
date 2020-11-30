@@ -1202,7 +1202,25 @@ header {
 }
 
 .main_kv > img {
-  opacity: 1;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .sttl {
@@ -1220,7 +1238,7 @@ header {
   display: inline-block;
   text-align: center;
   z-index: 30;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
@@ -1671,7 +1689,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     display: inline-block;
     text-align: center;
     z-index: 30;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
@@ -1864,7 +1882,7 @@ Stylesheet: 960px以上のモニタで適用
 ******************************************************************/
   .live-img-pc {
     display: block;
-    width: 90%;
+    width: 100%;
   }
   .live-img-sp {
     display: none;
@@ -1989,7 +2007,7 @@ Stylesheet: 1280px以上のモニタで適用
     display: inline-block;
     text-align: center;
     z-index: 30;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;

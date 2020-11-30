@@ -317,20 +317,20 @@ img{
        }
 
        & > img{
-         opacity: 1;//imgの表示
+         opacity: 0;//imgの表示
        }    
   }
 }
 
 
-// @keyframes fadeIn {
-//   0% {
-//       opacity: 0;
-//   }
-//   100% {
-//       opacity: 1;
-//   }
-// }
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 
 .sttl{
   display: flex;
@@ -343,7 +343,7 @@ img{
       display: inline-block;
       text-align: center;
       z-index: 30;
-      opacity: 1;//whoistheChampionのテキスト
+      opacity: 0;//whoistheChampionのテキスト
       position: absolute;
       animation-name: fadeIn;
       animation-duration: 1.5s;
