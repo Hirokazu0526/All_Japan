@@ -1428,8 +1428,8 @@ details[open] .group {
 }
 
 .live-text-item-m {
-  font-size: 1.2rem !important;
-  color: #47FF2F !important;
+  font-size: 1.2rem;
+  color: #47FF2F;
 }
 
 .live-text-item-m > span {
@@ -1437,8 +1437,8 @@ details[open] .group {
 }
 
 .live-text-item-w {
-  font-size: 1.2rem !important;
-  color: #FF58D9 !important;
+  font-size: 1.2rem;
+  color: #FF58D9;
 }
 
 .live-text-item-w > span {
@@ -1446,8 +1446,8 @@ details[open] .group {
 }
 
 .live-text-item-s {
-  font-size: 1.2rem !important;
-  color: #08BDFF !important;
+  font-size: 1.2rem;
+  color: #08BDFF;
 }
 
 .live-text-item-s > span {
@@ -1720,7 +1720,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     display: block;
   }
   .section-inner {
-    padding-top: 90px;
+    padding-top: 40px;
   }
   .section-info {
     display: -webkit-box;
@@ -1752,6 +1752,12 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .section-info.schedule .section-info-right {
     width: 100%;
   }
+  .section-info.match {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .section-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1781,8 +1787,23 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .section-adress p {
     font-size: 0.9rem;
   }
+  .live-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .live-info-right {
+    width: 48%;
+  }
+  .live-text-item {
+    font-size: 0.9rem;
+  }
   .live-text-item .information {
-    font-size: 25px;
+    font-size: 0.9rem;
   }
   .live-img-pc {
     display: block;
@@ -2024,9 +2045,6 @@ Stylesheet: 1280px以上のモニタで適用
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .section-title {
     font-size: 3rem;
@@ -2038,6 +2056,9 @@ Stylesheet: 1280px以上のモニタで適用
   }
   .section-text {
     color: white;
+    font-size: 1.5rem;
+  }
+  .section-text p {
     font-size: 1.5rem;
   }
   .section-adress {
