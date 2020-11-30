@@ -150,7 +150,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
  .section{
    &-inner{
-     padding-top: 90px;
+     padding-top: 40px;
    }
  
    &-info{
@@ -174,6 +174,10 @@ Stylesheet: 600px以上のタブレットやモニタで適用
        & .section-info-right{
          width: 100%;
        }        
+     }
+
+     &.match{
+      flex-direction: column;
      }
 
      
@@ -212,12 +216,18 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
  .live{
    &-info{
+     flex-direction: row;
+     justify-content: space-between;
+     &-right{
+       width: 48%;
+     }
    }
    &-text{
      &-item{
+       font-size: 0.9rem;
        & .information{
          // width: 290px;
-         font-size: 25px;
+         font-size: 0.9rem;
        }
      }
    }
