@@ -16,11 +16,12 @@
 
 <body>
     <div id="app">
-        <div class="container">
+        <div class="container" id="top">
             <div id="loading" class="loading active">
                 <div class="loadingText">Loading.....&nbsp;&nbsp;</div>
                 <img class="loadingball" src="img/site-logo.png" alt="spball">
             </div>
+            <a href="#top" id="btn-backtotop"><span class="arrow arrow_up"></span></a>
             <header>
                 <div class="header_area wrapper"　id="header-top">
                     <div class="header_title">
@@ -33,7 +34,7 @@
                             <li class="header_nav_list_item"><a href="#Schedule">Schedule</a></li>
                             <li class="header_nav_list_item"><a href="#Result">Match & Result</a></li>
                             <li class="header_nav_list_item"><a href="#Stadium">Stadium</a></li>
-                            <li class="header_nav_list_item"><a href="#News">News</a></li>
+                            <!-- <li class="header_nav_list_item"><a href="#News">News</a></li> -->
                             <li　class="header_nav_list_item"><a href="http://127.0.0.1:5500/index.html#" onclick="confirmFunction1()">Contact</a></li>
                         </ul>
                     </nav>
@@ -53,7 +54,7 @@
                                 <li><a href="#Result">Match & Result</a></li>
                                 <li><a href="#Stadium">Stadium</a></li>
                                 <!-- <li><a href="#Movie">Movie</a></li> -->
-                                <li><a href="#header-top" onclick="confirmFunction1()">Contact</a></li>
+                                <li><a href="http://127.0.0.1:5500/index.html#" onclick="confirmFunction1()">Contact</a></li>
                             </ul>
                     </nav>
                     <aside class="mobile-sns-icon">
@@ -368,6 +369,7 @@
     <script src="scripts/libs/loading.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="main_vue.js"></script>
+    <script src="scripts/libs/anime.js"></script>
     <script src="scripts/libs/text-animation.js"></script>
     <script src="scripts/libs/mobile-menu.js"></script>
     <script src="scripts/libs/smoothScroll.js"></script>
