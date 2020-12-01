@@ -66,6 +66,100 @@ a{
   padding-bottom: 80px;
 }
 
+/* ========================================================
+矢印アイコン
+=========================================================*/
+.arrow {
+	position: relative;
+	display: inline-block;
+	padding: 0 0 0 16px;
+	color: rgb(0, 0, 0);
+	vertical-align: middle;
+	text-decoration: none;
+	&::after,
+	&::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		vertical-align: middle;
+	}
+}
+// 上矢印
+.arrow_down::before,
+.arrow_up::before {
+	top: auto;
+	left: auto;
+	bottom: 8px;
+	width: 10px;
+	height: 10px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	transform: rotate(-45deg);
+}
+ 
+ 
+/* ========================================================
+ページトップに戻るボタン
+=========================================================*/
+#btn-backtotop{
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	transition: bottom 0.2s ease-out;
+  opacity: 0;
+  display: none;
+	
+	// スクロール時にJSから付与されるクラス
+	&.toTop{
+    opacity: 1;
+    display: block;
+	}
+	// ホバー時の挙動
+	&:hover{
+		opacity: .8;
+		bottom: 10px;
+		
+		&::after{
+      box-shadow: none;
+			// box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+		
+		}
+	}
+	// ボタンのベース
+	&::after{
+		content: "";
+		display: block;
+		color: #fff;
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		padding: 4px;
+		border-radius: 8px;
+		background-color: rgb(194, 18, 185);
+		transition: all .3s;
+		transform: scale(0.8) rotate(45deg);
+    transition: background-color 0.5s ease-out;
+		
+	}
+	// 矢印マーク
+	.arrow{
+		top: 49px;
+		left: 1px;
+	
+		&::before{
+			width: 10px;
+			height: 10px;
+			z-index: 1;
+			
+		}
+	}
+}
+
 
 header{
   position: relative;
