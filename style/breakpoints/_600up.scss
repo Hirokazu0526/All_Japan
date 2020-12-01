@@ -3,9 +3,92 @@
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+
+ 
+/* ========================================================
+ページトップに戻るボタン
+=========================================================*/
+#btn-backtotop{
+	bottom: 30px;
+	right: 30px;
+	
+	// ホバー時の挙動
+	&:hover{
+		bottom: 34px;
+		
+		&::after{
+			box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+		
+		}
+	}
+	// ボタンのベース
+	&::after{
+		content: "";
+		width: 80px;
+		height: 80px;
+		
+	}
+	// 矢印マーク
+	.arrow{
+		top: 78px;
+		left: 12px;
+	
+		&::before{
+			width: 30px;
+			height: 30px;
+			
+		}
+	}
+}
+
 .mobile-inner{
    display: none;
 }
+
+.header{
+  &_area{
+      width: 100%;
+      height: 50px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      z-index: 50;
+
+      & nav{
+        position: fixed;
+      }
+  }
+  
+  &_title{//タイトル
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 20px;
+      color: white;
+      font-weight: bold;
+      font-family: $Au;
+  }
+  &_nav_list{//ヘッダーナビゲーション
+      display: flex;
+      width: 560px;
+      height: 20px;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      list-style: none;
+      
+      &_item{
+        
+        & a{
+            font-size: 1rem;
+        }
+      }
+  }
+}
+
 .main{
    &-area{
      height: 400px;
