@@ -853,7 +853,7 @@ a {
 
 .font-gd {
   font-size: 1.3rem;
-  color: #f3f05c;
+  color: white;
 }
 
 .mb-sm {
@@ -2181,11 +2181,11 @@ Stylesheet: 1280px以上のモニタで適用
     line-height: 25px;
   }
   details {
-    width: 460px;
+    width: 500px;
     margin-bottom: 5px;
   }
   .group {
-    width: 460px;
+    width: 500px;
   }
   .group td {
     font-size: 12px;
