@@ -3,6 +3,10 @@
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+.font-gd{
+    font-size: 2rem ;
+  }
+
 .header{
     
     &_title{//タイトル
@@ -124,4 +128,18 @@ Stylesheet: 1280px以上のモニタで適用
         line-height: 25px;
       }
     }
-  }
+}
+
+details{
+    width: 460px;
+    margin-bottom: 5px;
+}
+
+.group {
+    width: 460px;
+    
+    & td{
+        font-size: 12px;
+    }
+}
+
