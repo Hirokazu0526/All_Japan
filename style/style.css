@@ -876,6 +876,18 @@ a {
   padding-bottom: 80px;
 }
 
+.cBlue {
+  color: #209bff !important;
+}
+
+.cPink {
+  color: #ff3ad1 !important;
+}
+
+.cYellow {
+  color: #ffe608 !important;
+}
+
 /* ========================================================
 矢印アイコン
 =========================================================*/
@@ -2082,6 +2094,9 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .font-gd {
+    font-size: 2rem;
+  }
   .header_title {
     font-size: 1.7rem;
     line-height: 30px;
@@ -2164,6 +2179,16 @@ Stylesheet: 1280px以上のモニタで適用
   .section-adress p {
     font-size: 0.8rem;
     line-height: 25px;
+  }
+  details {
+    width: 460px;
+    margin-bottom: 5px;
+  }
+  .group {
+    width: 460px;
+  }
+  .group td {
+    font-size: 12px;
   }
 }
 
