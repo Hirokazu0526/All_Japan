@@ -1543,7 +1543,7 @@ details[open] .group {
 
 .live-text-item-m {
   font-size: 1.2rem;
-  color: #47FF2F;
+  color: #209bff;
 }
 
 .live-text-item-m > span {
@@ -1552,7 +1552,7 @@ details[open] .group {
 
 .live-text-item-w {
   font-size: 1.2rem;
-  color: #FF58D9;
+  color: #ff3ad1;
 }
 
 .live-text-item-w > span {
@@ -1561,7 +1561,7 @@ details[open] .group {
 
 .live-text-item-s {
   font-size: 1.2rem;
-  color: #08BDFF;
+  color: #ffe608;
 }
 
 .live-text-item-s > span {
@@ -2082,6 +2082,16 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .header_title {
+    font-size: 1.7rem;
+    line-height: 30px;
+  }
+  .header_nav_list {
+    width: 660px;
+  }
+  .header_nav_list_item a {
+    font-size: 1.3rem;
+  }
   .main-area {
     height: 550px;
   }
@@ -2106,6 +2116,54 @@ Stylesheet: 1280px以上のモニタで適用
   }
   .sttl_text.s2020 {
     line-height: 20px;
+  }
+  .live-subttl {
+    font-size: 1.4rem;
+  }
+  .live-text-item {
+    margin-top: 10px;
+  }
+  .live-text-item-m {
+    font-size: 1.3rem;
+  }
+  .live-text-item-w {
+    font-size: 1.3rem;
+  }
+  .live-text-item-s {
+    font-size: 1.3rem;
+  }
+  .live-text-item .information {
+    font-size: 17px;
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+  .section-subttl {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .section-subttl-winner {
+    font-size: 17px;
+  }
+  .section-text p {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  .section-group h4 {
+    font-size: 12px;
+    color: white;
+  }
+  .section-adress {
+    color: white;
+    line-height: 30px;
+  }
+  .section-adress h3 {
+    font-size: 1rem;
+  }
+  .section-adress p {
+    font-size: 0.8rem;
+    line-height: 25px;
   }
 }
 

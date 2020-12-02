@@ -3,7 +3,26 @@
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
-
+.header{
+    
+    &_title{//タイトル
+       
+        font-size: 1.7rem;
+        line-height: 30px;
+        
+    }
+    &_nav_list{//ヘッダーナビゲーション
+        
+        width: 660px;
+        
+        &_item{
+            
+            & a{
+                font-size: 1.3rem;
+            }
+        }
+    }
+  }
 
 .main{
     &-area{
@@ -16,23 +35,93 @@ Stylesheet: 1280px以上のモニタで適用
       height: 550px;
       display: block;
     }
-  }
+}
   
-  .sttl{
+.sttl{
     display: flex;
     justify-content: space-around;
-    
+
     &_text{
         font-size: 1.2rem;
         
         &.catch_cp{
-          width: 100%;
-          font-size: 3.5em;
-          
+            width: 100%;
+            font-size: 3.5em;
+            
         }
-  
+
         &.s2020{
             line-height: 20px;
         }
+    }
+}
+
+.live{
+    
+    &-subttl{
+      font-size: 1.4rem;
+    }
+  
+    &-text{
+      &-item{
+        margin-top: 10px;
+  
+        &-m{
+          font-size: 1.3rem;
+          
+        }
+        &-w{
+          font-size: 1.3rem;
+          
+        }
+        &-s{
+          font-size: 1.3rem;
+          
+        }
+  
+        & .information{
+          font-size: 17px;
+          
+        }
+      }
+    }
+}
+
+.section{
+    
+    &-title{
+      font-size: 3rem;
+    }
+  
+    &-subttl{
+      color: white;
+      font-size: 1.5rem;
+      &-winner{
+        font-size: 17px;
+      }
+    }
+  
+    &-text{
+      p{
+        color: white;
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+    }
+    &-group h4{
+      font-size: 12px;
+      color: white;
+    }
+  
+    &-adress{
+      color: $cWhite;
+      line-height: 30px;
+      h3{
+        font-size: 1rem;
+      }
+      p{
+        font-size: 0.8rem;
+        line-height: 25px;
+      }
     }
   }
