@@ -2090,6 +2090,23 @@ Stylesheet: 1280px以上のモニタで適用
     height: 550px;
     display: block;
   }
+  .sttl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sttl_text {
+    font-size: 1.2rem;
+  }
+  .sttl_text.catch_cp {
+    width: 100%;
+    font-size: 3.5em;
+  }
+  .sttl_text.s2020 {
+    line-height: 20px;
+  }
 }
 
 @media (min-width: 1280px) {
