@@ -2113,11 +2113,11 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   .side.right {
     top: -100px;
-    right: 300px;
+    right: 200px;
   }
   .side.right.invew {
     top: 55px;
-    right: 100px;
+    right: 200px;
   }
   .side.right .side__inner {
     display: -webkit-box;
