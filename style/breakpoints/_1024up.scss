@@ -143,3 +143,51 @@ details{
     }
 }
 
+.side{
+
+    &.left{
+      top: -100px;
+      left: 850px;
+      &.invew{
+        top: 70px;
+        left: 850px;
+      }
+  
+  
+      & .side__inner{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+      }
+      
+    }
+  
+    &.right{
+      top: -100px;
+      right: 200px;
+      &.invew{
+        top: 65px;
+        right: 200px;
+      }
+      
+      & .side__inner{
+        display: flex;
+        flex-direction: row;
+  
+        & a{
+          margin-right: 20px;
+          
+        }
+      }
+  
+    }
+  
+  }
+  
+  
+  .sns-item{
+    width: 50px;
+  }
+  .jstf-item{
+    width: 200px;
+  }
+
