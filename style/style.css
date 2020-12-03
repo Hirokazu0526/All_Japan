@@ -2113,7 +2113,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   .side.right {
     top: -100px;
-    right: 100px;
+    right: 300px;
   }
   .side.right.invew {
     top: 55px;
