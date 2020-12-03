@@ -2099,11 +2099,11 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
   .side.left {
     top: -100px;
-    left: 750px;
+    left: 585px;
   }
   .side.left.invew {
     top: 60px;
-    left: 750px;
+    left: 585px;
   }
   .side.left .side__inner {
     -webkit-transform: rotate(0deg);
@@ -2139,7 +2139,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     width: 30px;
   }
   .jstf-item {
-    width: 150px;
+    width: 170px;
   }
 }
 
