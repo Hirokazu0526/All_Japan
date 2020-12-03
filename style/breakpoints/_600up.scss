@@ -109,7 +109,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
            animation-delay: 2s;
         }
         &_02{
-           top: calc(120 / 660 * 100vw);
+           top: calc(115 / 660 * 100vw);
            left: calc(80 / 660 * 100vw);
            width: 35%;
            opacity: 0;
@@ -336,48 +336,99 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     margin-top: 120px;
     padding-top: 20px;
     padding-bottom: 50px;
-  }
+}
   
-  .sponsor{
-    &-logo{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      flex-direction: row;
-      justify-content: center;
-      a{
-        display: block;
-        width: 150px;
-        margin: 0 20px;
-        
-  
-        // &:nth-child(1){
-        //   align-self: center;
-        // }
-        // &:nth-child(2){
-        //   width: 150px;
-        // }
-        // &:nth-child(3){
-        //   align-self: center;
-        // }
-        &:nth-child(4){
-          width: 100px;
-        }
-        &:nth-child(5){
-          width: 100px;
-        }
-        // &:nth-child(6){
-        //   align-self: center;
-        // }
-        &:nth-child(7){
-          width: 120px;
-          margin-bottom: 0px;
-        }
+.sponsor{
+  &-logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    a{
+      display: block;
+      width: 150px;
+      margin: 0 20px;
+      
+
+      // &:nth-child(1){
+      //   align-self: center;
+      // }
+      // &:nth-child(2){
+      //   width: 150px;
+      // }
+      // &:nth-child(3){
+      //   align-self: center;
+      // }
+      &:nth-child(4){
+        width: 100px;
+      }
+      &:nth-child(5){
+        width: 100px;
+      }
+      // &:nth-child(6){
+      //   align-self: center;
+      // }
+      &:nth-child(7){
+        width: 120px;
+        margin-bottom: 0px;
       }
     }
-    &-item{
-      width: 100%;
-      margin-top: 30px;
-  
-    }
   }
+  &-item{
+    width: 100%;
+    margin-top: 30px;
+
+  }
+}
+
+.side{
+
+  &.left{
+    top: -100px;
+    left: 750px;
+    &.invew{
+      top: 60px;
+      left: 750px;
+    }
+
+
+    & .side__inner{
+      transform: rotate(0deg);
+      transform-origin: bottom;
+    }
+    
+  }
+
+  &.right{
+    top: -100px;
+    right: 180px;
+    &.invew{
+      top: 55px;
+      right: 180px;
+    }
+    
+    & .side__inner{
+      display: flex;
+      flex-direction: row;
+
+      & a{
+        margin-right: 20px;
+        
+      }
+    }
+
+  }
+
+}
+
+.side{
+  display: block;
+  top: 30%;
+}
+.sns-item{
+  width: 30px;
+}
+.jstf-item{
+  width: 150px;
+}

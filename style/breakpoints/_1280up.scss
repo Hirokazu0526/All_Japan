@@ -122,19 +122,19 @@ header{
         font-size: 5rem;
         color: rgb(134, 110, 2);
         
-        top: 500px;
+        top: 555px;
         left: 50%;
         transform: translate(-50%, -50%);
       }
 
       &.s2019{
           top: 650px;
-          left: 200px;
+          left: 140px;
           transform: translateY(-50%);
       }
       &.w2019{
           top: 650px;
-          left: 630px;
+          left: 575px;
           transform: translateY(-50%);
       }
       &.s2020{
@@ -343,4 +343,41 @@ summary {
     margin-top: 30px;
 
   }
+}
+
+.side{
+  
+  
+  &.left{
+    top: 270px;
+    left: -200px;
+    &.invew{
+      top: 270px;
+      left: -60px;
+    }
+
+    transform: rotate(-90deg);
+      transform-origin: bottom;
+
+  }
+
+  &.right{
+    top: 270px;
+    right: -100px;
+    &.invew{
+      top: 300px;
+      right: 20px;
+    }
+    & .side__inner{
+      flex-direction: column;
+      margin-top: 40px;
+    }
+  }
+
+}
+.sns-item{
+  width: 55px;
+}
+.jstf-item{
+  width: 300px;
 }

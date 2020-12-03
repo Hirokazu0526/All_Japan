@@ -1621,6 +1621,8 @@ summary {
   background: #fff;
   margin-top: 80px;
   padding-top: 20px;
+  position: relative;
+  z-index: 11;
 }
 
 .sponsor > h2 {
@@ -1675,6 +1677,49 @@ footer small {
   font-size: 0.7rem;
   font-family: 'PT Serif';
   line-height: 60px;
+}
+
+.side {
+  display: none;
+  position: fixed;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.side a:hover {
+  opacity: .8;
+}
+
+.side.left {
+  left: -200px;
+}
+
+.side.left.invew {
+  left: -70px;
+}
+
+.side.left .side__inner {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.side.right .side__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.side.right .side__inner a {
+  margin-top: 10px;
 }
 
 @media (min-width: 480px) {
@@ -1784,7 +1829,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
             animation-delay: 2s;
   }
   .main_kv_02 {
-    top: calc(120 / 660 * 100vw);
+    top: calc(115 / 660 * 100vw);
     left: calc(80 / 660 * 100vw);
     width: 35%;
     opacity: 0;
@@ -2052,6 +2097,50 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     width: 100%;
     margin-top: 30px;
   }
+  .side.left {
+    top: -100px;
+    left: 750px;
+  }
+  .side.left.invew {
+    top: 60px;
+    left: 750px;
+  }
+  .side.left .side__inner {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  .side.right {
+    top: -100px;
+    right: 180px;
+  }
+  .side.right.invew {
+    top: 55px;
+    right: 180px;
+  }
+  .side.right .side__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .side.right .side__inner a {
+    margin-right: 20px;
+  }
+  .side {
+    display: block;
+    top: 30%;
+  }
+  .sns-item {
+    width: 30px;
+  }
+  .jstf-item {
+    width: 150px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -2308,20 +2397,20 @@ Stylesheet: 1280px以上のモニタで適用
     width: 100%;
     font-size: 5rem;
     color: #866e02;
-    top: 500px;
+    top: 555px;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
   .sttl_text.s2019 {
     top: 650px;
-    left: 200px;
+    left: 140px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .sttl_text.w2019 {
     top: 650px;
-    left: 630px;
+    left: 575px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -2494,6 +2583,39 @@ Stylesheet: 1280px以上のモニタで適用
   .sponsor-item {
     width: 100%;
     margin-top: 30px;
+  }
+  .side.left {
+    top: 270px;
+    left: -200px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  .side.left.invew {
+    top: 270px;
+    left: -60px;
+  }
+  .side.right {
+    top: 270px;
+    right: -100px;
+  }
+  .side.right.invew {
+    top: 300px;
+    right: 20px;
+  }
+  .side.right .side__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+  }
+  .sns-item {
+    width: 55px;
+  }
+  .jstf-item {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
