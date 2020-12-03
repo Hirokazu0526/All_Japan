@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 class Main {
     constructor() {
         this.header = document.querySelector('.header');
+        this.sides = document.querySelectorAll('.side');
         this._observers = [];
         this._init();
     }
@@ -15,6 +16,17 @@ class Main {
         new MobileMenu();
     }
 
+    // _sideAnimation(el, inview) {
+    //     if(inview) {
+    //         this.sides.forEach(side => side.classList.add('inview'));
+    //     } else {
+    //         this.sides.forEach(side => side.classList.remove('inview'));
+    //     }
+    // }
+    // _scrollInit() {
+    //     this.observers = new ScrollObserver('.main-area', this._sideAnimation.bind(this), {once: false, rootMargin: "-300px 0px"});
+    // }
     
 }
+
 
