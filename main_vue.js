@@ -16,7 +16,7 @@ var app = new Vue({
         id:"1",
         groupName:"A",
         name1:" A.S. WAKABA B ",
-        name2:" 阪神酒販 Dee'sTC ",
+        name2:" 阪神酒販 Dees TC ",
         name3:" 東京大学 A ",
         rsl:"順位",
         rsl2:"",
