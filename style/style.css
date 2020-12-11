@@ -856,6 +856,10 @@ a {
   color: white;
 }
 
+.mt-sm {
+  margin-top: 10px;
+}
+
 .mb-sm {
   margin-bottom: 10px;
 }
