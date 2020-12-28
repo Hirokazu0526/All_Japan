@@ -317,7 +317,7 @@ img{
       height: calc(560 / 414 * 100vw);
       display: block;
 
-       &_01{
+      &_01{
           top: calc(448 / 414 * 100vw);
           right: calc(0 / 414 * 100vw);
           width: 66%;
@@ -328,8 +328,8 @@ img{
           animation-fill-mode: forwards;
           animation-delay: 3.5s;
           animation-timing-function: ease-in-out;
-       }
-       &_02{
+      }
+      &_02{
           top: calc(480 / 414 * 100vw);
           left: calc(-10 / 414 * 100vw);
           width: 56%;
@@ -340,8 +340,8 @@ img{
           animation-fill-mode: forwards;
           animation-delay: 4s;
           animation-timing-function: ease-in-out;
-       }
-       &_03{
+      }
+      &_03{
           top: calc(400 / 414 * 100vw);
           left: calc(12 / 414 * 100vw);
           width: 88%;
@@ -352,8 +352,8 @@ img{
           animation-fill-mode: forwards;
           animation-delay: 4.5s;
           animation-timing-function: ease-in-out;
-       }
-       &_04{
+      }
+      &_04{
           top: calc(12 / 414 * 100vw);
           left: calc(-220 / 414 * 100vw);
           width: 83%;
@@ -364,8 +364,8 @@ img{
           animation-fill-mode: forwards;
           animation-delay: 2s;
           animation-timing-function: ease-in-out;
-       }
-       &_05{
+      }
+      &_05{
           top: calc(-8 / 414 * 100vw);
           right: calc(9 / 414 * 100vw);
           width: 65%;
@@ -376,8 +376,8 @@ img{
           animation-fill-mode: forwards;
           animation-delay: 2.5s;
           animation-timing-function: ease-in-out;
-       }
-       &_06{
+      }
+      &_06{
           top: calc(0 / 414 * 100vw);
           left: calc(80 / 414 * 100vw);
           width: 67%;
@@ -389,7 +389,7 @@ img{
           animation-delay: 3s;
           animation-timing-function: ease-in-out;
       }
-       &_07{
+      &_07{
           top: calc(178 / 414 * 100vw);
           right: calc(0 / 414 * 100vw);
           width: 70%;
@@ -401,7 +401,7 @@ img{
           animation-delay: 5s;
           animation-timing-function: ease-in-out;
       }
-       &_08{
+      &_08{
           top: calc(180 / 414 * 100vw);
           left: calc(-130 / 414 * 100vw);
           width: 90%;
@@ -412,8 +412,8 @@ img{
           animation-fill-mode: forwards;
           animation-delay: 5.5s;
           animation-timing-function: ease-in-out;
-       }
-       &_09{
+      }
+      &_09{
           top: calc(150 / 414 * 100vw);
           left: calc(10 / 414 * 100vw);
           width: 93%;
@@ -424,11 +424,11 @@ img{
           animation-fill-mode: forwards;
           animation-delay: 6s;
           animation-timing-function: ease-in-out;
-       }
+      }
 
-       & > img{
-         opacity: 0;//imgの表示
-       }    
+      & > img{
+        opacity: 0;//imgの表示
+      }    
   }
 }
 
@@ -819,4 +819,87 @@ footer{
 
   }
 
+}
+
+.slide{
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  overflow: auto;
+  margin: 0 auto;
+
+  &-item{
+      scroll-snap-align: center;
+      // display: inline-block;
+      white-space: normal;
+      margin: 0 auto 30px;
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+      
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      &-title{
+          font-size: 1.3rem;
+          margin-bottom: 5px;
+      }
+
+      &-img{
+          width: 400px;
+      }
+
+      &-info{
+          color: black;
+          font-size: 0.5rem;
+          margin-top: 10px;
+      }
+
+      &-top{
+        h4{
+          & span{
+            padding-left: 1.5em;
+          }
+        }
+        p{
+          text-indent: 9em;
+        }
+        &:nth-child(2){
+          h4{
+            & span{
+              padding-left: 1rem;
+            }
+          }
+        }
+        &:nth-child(3){
+          h4{
+            & span{
+              padding-left: 3rem;
+            }
+          }
+        }
+        &:nth-child(4){
+          h4{
+            & span{
+              padding-left: 3rem;
+            }
+          }
+        }
+      }
+  }
+}
+.cm{
+  color: gold;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nd{
+  color: silver;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.rd{
+  color: #815a2b;
+  font-size: 1rem;
+  font-weight: bold;
 }

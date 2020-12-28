@@ -90,242 +90,241 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 }
 
 .main{
-   &-area{
-     height: 400px;
-   }
- 
-   &_kv{
-       position: relative;
-       
-       height: 400px;
-       display: block;
- 
-        &_01{
-           top: calc(100 / 660 * 100vw);
-           left: calc(-130 / 660 * 100vw);
-           width: 40%;
-           opacity: 0;
-           z-index: 5;
-           animation-delay: 2s;
-        }
-        &_02{
-           top: calc(115 / 660 * 100vw);
-           left: calc(80 / 660 * 100vw);
-           width: 35%;
-           opacity: 0;
-           z-index: 6;
-           animation-delay: 2.5s;
-        }
-        &_03{
-           top: calc(10 / 660 * 100vw);
-           left: calc(-20 / 660 * 100vw);
-           width: 40%;
-           opacity: 0;
-           z-index: 4;
-           animation-delay: 3s;
-        }
-        &_04{
-           top: calc(80 / 660 * 100vw);
-           left: calc(340 / 660 * 100vw);
-           width: 45%;
-           opacity: 0;
-           z-index: 5;
-           animation-delay: 3.5s;
-        }
-        &_05{
-           top: calc(100 / 660 * 100vw);
-           right: calc(120 / 660 * 100vw);
-           width: 40%;
-           opacity: 0;
-           z-index: 5;
-           animation-delay: 4s;
-        }
-        &_06{
-           top: calc(-20 / 660 * 100vw);
-           left: calc(430 / 660 * 100vw);
-           width: 30%;
-           opacity: 0;
-           z-index: 3;
-           animation-delay: 4.5s;
-       }
-        &_07{
-           top: calc(0 / 660 * 100vw);
-           left: calc(200 / 660 * 100vw);
-           width: 37%;
-           opacity: 0;
-           z-index: 5;
-           animation-delay: 5s;
-       }
-        &_08{
-           top: calc(-25 / 660 * 100vw);
-           left: calc(110 / 660 * 100vw);
-           width: 40%;
-           opacity: 0;
-           z-index: 5;
-           animation-delay: 5.5s;
-        }
-        &_09{
-           top: calc(50 / 660 * 100vw);
-           left: calc(150 / 660 * 100vw);
-           width: 50%;
-           opacity: 0;
-           z-index: 20;
-           animation-delay: 6s;
-        }
- 
-   }
- }
+  &-area{
+    height: 400px;
+  }
 
- .sttl{
-   display: flex;
-   justify-content: space-around;
-   
-   &_text{
-       font-size: .8rem;
-       color: white;
-       font-family: $Au;
-       display: inline-block;
-       text-align: center;
-       z-index: 30;
-       opacity: 0;//whoistheChampionのテキスト
-       position: absolute;
-       animation-name: fadeIn;
-       animation-duration: 1.5s;
-       animation-fill-mode: forwards;
-       animation-delay: 6.5s;
-       animation-timing-function: ease-in-out;
- 
-       &.catch_cp{
-         width: 100%;
-         font-size: 2.7em;
-         color: rgb(134, 110, 2);
-         text-shadow: 2px 2px 1px white;
-         top: calc(170 / 400 * 100vw);
-         left: calc(200 / 400 * 100vw);
-         transform: translate(-50%, -50%);
-       }
- 
-       &.s2019{
-         top: calc(200 / 400 * 100vw);
-         left: calc(50/ 400 * 100vw);
-         transform: translateY(-50%);
-       }
-       &.w2019{
-         top: calc(200 / 400 * 100vw);
-         left: calc(170 / 400 * 100vw);
-         transform: translateY(-50%);
-       }
-       &.s2020{
-         top: calc(200 / 400 * 100vw);
-         right: calc(40 / 400 * 100vw);
-         line-height: 15px;
-         transform: translateY(-50%);
-       }
-   }
- }
+  &_kv{
+      position: relative;
+      
+      height: 400px;
+      display: block;
 
- .sp{
-   display: none;
- }
- .pc{
-   display: block;
- }
-
- .section{
-   &-inner{
-     padding-top: 40px;
-   }
- 
-   &-info{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     
-     &-left{
-         width: 48%;
-     }
-     &-right{
-         width: 48%;
-     }
-
-     &.schedule{
-       flex-direction: column;
-
-       & .section-info-left{
-         width: 100%;
-       }        
-       & .section-info-right{
-         width: 100%;
-       }        
-     }
-
-     &.match{
-      flex-direction: column;
-     }
-
-     
-   }
- 
-   &-group{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-   }
-
-   &-title{
-     font-size: 2.5rem;
-   }
- 
-   &-subttl{
-       font-size: 1.1rem;
-       &.stadium{
-           font-size: 1.8rem;
-       }
- 
-   }
- 
- 
-   &-adress{
-     color: $cWhite;
-     line-height: 30px;
-     h3{
-       font-size: 1.2rem;
-     }
-     p{
-       font-size: 0.9rem;
-     }
-   }
+      &_01{
+          top: calc(100 / 660 * 100vw);
+          left: calc(-130 / 660 * 100vw);
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-delay: 2s;
+      }
+      &_02{
+          top: calc(115 / 660 * 100vw);
+          left: calc(80 / 660 * 100vw);
+          width: 35%;
+          opacity: 0;
+          z-index: 6;
+          animation-delay: 2.5s;
+      }
+      &_03{
+          top: calc(10 / 660 * 100vw);
+          left: calc(-20 / 660 * 100vw);
+          width: 40%;
+          opacity: 0;
+          z-index: 4;
+          animation-delay: 3s;
+      }
+      &_04{
+          top: calc(80 / 660 * 100vw);
+          left: calc(340 / 660 * 100vw);
+          width: 45%;
+          opacity: 0;
+          z-index: 5;
+          animation-delay: 3.5s;
+      }
+      &_05{
+          top: calc(100 / 660 * 100vw);
+          right: calc(120 / 660 * 100vw);
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-delay: 4s;
+      }
+      &_06{
+          top: calc(-20 / 660 * 100vw);
+          left: calc(430 / 660 * 100vw);
+          width: 30%;
+          opacity: 0;
+          z-index: 3;
+          animation-delay: 4.5s;
+      }
+      &_07{
+          top: calc(0 / 660 * 100vw);
+          left: calc(200 / 660 * 100vw);
+          width: 37%;
+          opacity: 0;
+          z-index: 5;
+          animation-delay: 5s;
+      }
+      &_08{
+          top: calc(-25 / 660 * 100vw);
+          left: calc(110 / 660 * 100vw);
+          width: 40%;
+          opacity: 0;
+          z-index: 5;
+          animation-delay: 5.5s;
+      }
+      &_09{
+          top: calc(50 / 660 * 100vw);
+          left: calc(150 / 660 * 100vw);
+          width: 50%;
+          opacity: 0;
+          z-index: 20;
+          animation-delay: 6s;
+      }
+  }
 }
 
- .live{
-   &-info{
-     flex-direction: row;
-     justify-content: space-between;
-     &-right{
-       width: 48%;
-     }
-   }
-   &-text{
-     &-item{
-       font-size: 0.9rem;
-       & .information{
-         // width: 290px;
-         font-size: 0.9rem;
-       }
-     }
-   }
- 
-   &-img{
-     &-pc{
-       display: block;
-       // margin: 0 auto;
-     }
-     &-sp{
-       display: none;
-       margin: 0 auto;
-     }
-   }
- }
+.sttl{
+  display: flex;
+  justify-content: space-around;
+  
+  &_text{
+      font-size: .8rem;
+      color: white;
+      font-family: $Au;
+      display: inline-block;
+      text-align: center;
+      z-index: 30;
+      opacity: 0;//whoistheChampionのテキスト
+      position: absolute;
+      animation-name: fadeIn;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-delay: 6.5s;
+      animation-timing-function: ease-in-out;
+
+      &.catch_cp{
+        width: 100%;
+        font-size: 2.7em;
+        color: rgb(134, 110, 2);
+        text-shadow: 2px 2px 1px white;
+        top: calc(170 / 400 * 100vw);
+        left: calc(200 / 400 * 100vw);
+        transform: translate(-50%, -50%);
+      }
+
+      &.s2019{
+        top: calc(200 / 400 * 100vw);
+        left: calc(50/ 400 * 100vw);
+        transform: translateY(-50%);
+      }
+      &.w2019{
+        top: calc(200 / 400 * 100vw);
+        left: calc(170 / 400 * 100vw);
+        transform: translateY(-50%);
+      }
+      &.s2020{
+        top: calc(200 / 400 * 100vw);
+        right: calc(40 / 400 * 100vw);
+        line-height: 15px;
+        transform: translateY(-50%);
+      }
+  }
+}
+
+.sp{
+  display: none;
+}
+.pc{
+  display: block;
+}
+
+.section{
+  &-inner{
+    padding-top: 40px;
+  }
+
+  &-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &-left{
+        width: 48%;
+    }
+    &-right{
+        width: 48%;
+    }
+
+    &.schedule{
+      flex-direction: column;
+
+      & .section-info-left{
+        width: 100%;
+      }        
+      & .section-info-right{
+        width: 100%;
+      }        
+    }
+
+    &.match{
+    flex-direction: column;
+    }
+
+    
+  }
+
+  &-group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-title{
+    font-size: 2.5rem;
+  }
+
+  &-subttl{
+      font-size: 1.1rem;
+      &.stadium{
+          font-size: 1.8rem;
+      }
+
+  }
+
+
+  &-adress{
+    color: $cWhite;
+    line-height: 30px;
+    h3{
+      font-size: 1.2rem;
+    }
+    p{
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.live{
+  &-info{
+    flex-direction: row;
+    justify-content: space-between;
+    &-right{
+      width: 48%;
+    }
+  }
+  &-text{
+    &-item{
+      font-size: 0.9rem;
+      & .information{
+        // width: 290px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  &-img{
+    &-pc{
+      display: block;
+      // margin: 0 auto;
+    }
+    &-sp{
+      display: none;
+      margin: 0 auto;
+    }
+  }
+}
 
 
 
@@ -431,4 +430,40 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 }
 .jstf-item{
   width: 170px;
+}
+
+.slide{
+  &-item{
+    // display: inline-block;
+    margin: 0 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+    &-top{
+      display: flex;
+      align-items: center;
+      // justify-content: start;
+
+        p{
+          text-indent: 0;
+        }
+    }
+
+    &-title{
+      font-size: 1.5rem;
+    }
+
+    &-img{
+      width: 630px;
+    }
+
+    &-info{
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  }
+
 }
