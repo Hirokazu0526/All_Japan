@@ -2344,7 +2344,7 @@ Stylesheet: 1280px以上のモニタで適用
     line-height: 30px;
   }
   .header_nav_list {
-    width: 660px;
+    width: 750px;
   }
   .header_nav_list_item a {
     font-size: 1.3rem;
