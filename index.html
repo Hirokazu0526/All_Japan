@@ -274,7 +274,7 @@
                                 <h3 class="section-subttl-t font-gd mb-sm animationTarget">2020.12.26(Sun)</h3>
                                 <h3 class="section-subttl cYellow mb-sm animationTarget">Super Division</h3>
                                 <div class="section-group font-fmSg animationTarget">
-                                    <template v-for=" g in groups_S ">
+                                    <div v-for=" g in groups_S " :key="g">
                                         <details>
                                         <summary>Group {{ g.groupName }}</summary>
                                             <table class="group">
@@ -308,12 +308,12 @@
                                                 </tr>
                                             </table>
                                         </details>
-                                    </template>
+                                    </div>
                                     <h4>A.S.WAKABA A 、SC TOKYO AXIS は予選免除</h4>
                                 </div><br>
                                 <h3 class="section-subttl cBlue mb-sm animationTarget">Men's Division</h3>
                                 <div class="section-group font-fmSg animationTarget">
-                                    <template v-for=" g in groups_M ">
+                                    <div v-for=" g in groups_M " :key="g">
                                         <details>
                                         <summary>Group {{ g.groupName }}</summary>
                                         <table class="group">
@@ -347,11 +347,11 @@
                                             </tr>
                                         </table>
                                         </details>
-                                    </template>
+                                    </div>
                                 </div><br>
                                 <h3 class="section-subttl cPink mb-sm animationTarget">Women's Division</h3>
                                 <div class="section-group font-fmSg animationTarget">
-                                    <template v-for=" g in groups_W ">
+                                    <div v-for=" g in groups_W " :key="g">
                                         <details>
                                         <summary>Group {{ g.groupName }}</summary>
                                         <table class="group">
@@ -385,7 +385,7 @@
                                             </tr>
                                         </table>
                                         </details>
-                                    </template>
+                                    </div>
                                     <h4>TOKYO ヴェルディA 、A.S.WAKABA b は予選免除</h4>
                                 </div>
                                 <br>
